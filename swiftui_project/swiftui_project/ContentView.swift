@@ -17,6 +17,9 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
+        VStack {
+            Text("просто для теста")
+        }
         NavigationView {
             List {
                 ForEach(items) { item in
