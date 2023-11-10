@@ -16,6 +16,8 @@
 		9D97D8602AFA52BF003F10B5 /* swiftui_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D85F2AFA52BF003F10B5 /* swiftui_projectTests.swift */; };
 		9D97D86A2AFA52BF003F10B5 /* swiftui_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */; };
 		9D97D86C2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */; };
+		9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB350D52AFE529600283DE9 /* StartScreen.swift */; };
+		9DB350DF2AFECF8D00283DE9 /* StartScreenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB350DE2AFECF8D00283DE9 /* StartScreenColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		9D97D8652AFA52BF003F10B5 /* swiftui_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITests.swift; sourceTree = "<group>"; };
 		9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9DB350D52AFE529600283DE9 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		9DB350DD2AFEB02700283DE9 /* swiftui-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "swiftui-project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9DB350DE2AFECF8D00283DE9 /* StartScreenColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 		9D97D83D2AFA52BE003F10B5 = {
 			isa = PBXGroup;
 			children = (
+				9DB350DD2AFEB02700283DE9 /* swiftui-project-Info.plist */,
 				9D97D8482AFA52BE003F10B5 /* swiftui_project */,
 				9D97D85E2AFA52BF003F10B5 /* swiftui_projectTests */,
 				9D97D8682AFA52BF003F10B5 /* swiftui_projectUITests */,
@@ -98,10 +104,11 @@
 		9D97D8482AFA52BE003F10B5 /* swiftui_project */ = {
 			isa = PBXGroup;
 			children = (
+				9DB350D72AFE52B600283DE9 /* StartScreen */,
 				9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */,
 				9D97D84B2AFA52BE003F10B5 /* ContentView.swift */,
-				9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */,
 				9D97D8522AFA52BF003F10B5 /* Persistence.swift */,
+				9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */,
 				9D97D8542AFA52BF003F10B5 /* swiftui_project.xcdatamodeld */,
 				9D97D84F2AFA52BF003F10B5 /* Preview Content */,
 			);
@@ -131,6 +138,15 @@
 				9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */,
 			);
 			path = swiftui_projectUITests;
+			sourceTree = "<group>";
+		};
+		9DB350D72AFE52B600283DE9 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9DB350D52AFE529600283DE9 /* StartScreen.swift */,
+				9DB350DE2AFECF8D00283DE9 /* StartScreenColors.swift */,
+			);
+			path = StartScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +281,9 @@
 			files = (
 				9D97D8532AFA52BF003F10B5 /* Persistence.swift in Sources */,
 				9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */,
+				9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */,
 				9D97D84C2AFA52BE003F10B5 /* ContentView.swift in Sources */,
+				9DB350DF2AFECF8D00283DE9 /* StartScreenColors.swift in Sources */,
 				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +451,7 @@
 				DEVELOPMENT_TEAM = C3777FY22U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +481,7 @@
 				DEVELOPMENT_TEAM = C3777FY22U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
