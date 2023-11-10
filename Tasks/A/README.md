@@ -13,6 +13,7 @@ https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-tappable-bu
 https://developer.apple.com/documentation/swiftui/buttonstyle
 https://www.hackingwithswift.com/quick-start/swiftui/customizing-button-with-buttonstyle
 
+- Download *.sketch file
 - Open UI/UX design in sketch and try to see font styles, colors, paddings
 - Add in assets colours (be ready for 2 themes dark and light) and images
 - Implement the Welcome screen for 2 themes (light and dark)
