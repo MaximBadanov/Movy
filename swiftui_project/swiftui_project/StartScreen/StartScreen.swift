@@ -1,9 +1,3 @@
-//
-//  StartScreen.swift
-//  swiftui_project
-//
-//  Created by Максим Баданов on 10.11.2023.
-//
 import SwiftUI
 
 

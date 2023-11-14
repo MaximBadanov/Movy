@@ -1,10 +1,3 @@
-//
-//  swiftui_projectApp.swift
-//  swiftui_project
-//
-//  Created by Максим Баданов on 07.11.2023.
-//
-
 import SwiftUI
 
 @main

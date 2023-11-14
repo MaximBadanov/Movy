@@ -1,9 +1,3 @@
-//
-//  LogoView.swift
-//  swiftui_project
-//
-//  Created by Максим Баданов on 14.11.2023.
-//
 import SwiftUI
 
 
