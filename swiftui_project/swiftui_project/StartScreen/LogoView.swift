@@ -10,14 +10,14 @@ struct LogoView: View {
                 Text(StartScreenConstants.StartScreenAppName.dot)
                     .foregroundColor(StartScreenConstants.StartScreenColors.customRed)
             }
-            .font(Font.system(size: UIConstants.size64.rawValue, weight: .bold))
-            .padding(.bottom, UIConstants.size24.rawValue)
+            .font(Font.system(size: UIConstants.size64, weight: .bold))
+            .padding(.bottom, UIConstants.size24)
             VStack {
                 Text(StartScreenConstants.StartScreenDescription.firstRow)
                 Text(StartScreenConstants.StartScreenDescription.secondRow)
             }
-            .padding([.leading, .trailing], UIConstants.size16.rawValue)
-            .font(Font.system(size: UIConstants.size24.rawValue, weight: .regular))
+            .padding([.leading, .trailing], UIConstants.size16)
+            .font(Font.system(size: UIConstants.size24, weight: .regular))
         }
     }
 }
