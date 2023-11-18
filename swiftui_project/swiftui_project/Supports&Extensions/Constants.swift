@@ -15,6 +15,5 @@ struct Constants {
         static var firstRow = "Choose your best movie for"
         static var secondRow = "tonight quickly."
     }
-        
 
 }
