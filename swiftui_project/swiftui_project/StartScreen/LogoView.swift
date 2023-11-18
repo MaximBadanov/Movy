@@ -5,19 +5,19 @@ struct LogoView: View {
     var body: some View {
         VStack {
             HStack() {
-                Text(StartScreenConstants.StartScreenAppName.movy)
-                    .foregroundColor(StartScreenConstants.StartScreenColors.customGray)
-                Text(StartScreenConstants.StartScreenAppName.dot)
-                    .foregroundColor(StartScreenConstants.StartScreenColors.customRed)
+                Text("Movy")
+                    .foregroundColor(Color.appsGray)
+                Text(".")
+                    .foregroundColor(Color.appsRed)
             }
-            .font(Font.system(size: UIConstants.size64, weight: .bold))
+            .font(Font.system(size: 64, weight: .bold))
             .padding(.bottom, UIConstants.size24)
             VStack {
-                Text(StartScreenConstants.StartScreenDescription.firstRow)
-                Text(StartScreenConstants.StartScreenDescription.secondRow)
+                Text(Constants.Description.firstRow)
+                Text(Constants.Description.secondRow)
             }
-            .padding([.leading, .trailing], UIConstants.size16)
-            .font(Font.system(size: UIConstants.size24, weight: .regular))
+            .padding(.horizontal, UIConstants.size16)
+            .font(Font.system(size: 24, weight: .regular))
         }
     }
 }
