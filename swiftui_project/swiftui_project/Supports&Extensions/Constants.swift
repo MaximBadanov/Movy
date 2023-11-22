@@ -1,19 +1,34 @@
 import SwiftUI
 
 
-struct Constants {
+struct Icons {
     
-    struct Icons {
-        static var tvUsual = Image(systemName: "tv")
-            .renderingMode(.original)
-        static var tvWithWifi = Image(systemName: "tv.badge.wifi")
-        static var tvAndHiFiSpeaker = Image(systemName: "tv.and.hifispeaker.fill")
+    static var tvUsual: Image {
+        Image(systemName: "tv")
             .renderingMode(.original)
     }
-    
-    struct Description {
-        static var firstRow = "Choose your best movie for"
-        static var secondRow = "tonight quickly."
+        
+    static var tvAndHiFiSpeaker : Image {
+        Image(systemName: "tv.and.hifispeaker.fill")
+            .renderingMode(.original)
     }
-
+        
+    static var tvWithWifi: Image {
+        Image(systemName: "tv.badge.wifi")
+    }
 }
+
+struct AppName {
+    
+    static var movi : Text {
+        Text("Movy")
+            .foregroundColor(Color.grayCustom)
+    }
+    
+    static var dot: Text {
+        Text(".")
+            .foregroundColor(Color.redCustom)
+    }
+}
+
+

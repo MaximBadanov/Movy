@@ -2,32 +2,31 @@ import SwiftUI
 
 
 struct StartScreen: View {
-    
     var body: some View {
-        
         VStack {
             HStack(alignment: .firstTextBaseline,
-                   spacing: UIConstants.size8) {
-                Constants.Icons.tvUsual
-                Constants.Icons.tvWithWifi
-                Constants.Icons.tvAndHiFiSpeaker
+                   spacing: UISize.size8) {
+                Icons.tvUsual
+                Icons.tvWithWifi
+                Icons.tvAndHiFiSpeaker
             }
-            .font(.system(size: UIConstants.size24))
-            Spacer(minLength: UIConstants.size8)
+                   .font(.system(size: UISize.size24))
+            Spacer(minLength: UISize.size8)
             LogoView()
-            Spacer(minLength: UIConstants.size8)
-            Button("Get started") {
-                //             тут будет экшен перехода
+            Spacer(minLength: UISize.size8)
+            Button("Get Started") {
+                // Действие при нажатии кнопки
             }
-            .font(Font.system(size: 16,
-                              weight: .medium))
-            .padding(.horizontal, UIConstants.size112)
-            .padding(.vertical, UIConstants.size16)
             .foregroundColor(.white)
-            .background(Color.appsRed)
-            .cornerRadius(UIConstants.size16)
+            .font(Font.system(size: UISize.size16,
+                              weight: .medium))
+            .padding(.vertical, UISize.size16)
+            .frame(maxWidth: .infinity)
+            .background(Color.redCustom)
+            .cornerRadius(UISize.size16)
+            .padding(.horizontal, UISize.size40)
         }
-        .padding(.bottom, UIConstants.size40)
+        .padding(.bottom, UISize.size16)
     }
 }
 
