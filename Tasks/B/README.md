@@ -2,9 +2,13 @@
 
 **Links:**
 https://developer.apple.com/documentation/swiftui/view/modifier(_:)
+
 https://www.hackingwithswift.com/books/ios-swiftui/custom-modifiers
+
 https://developer.apple.com/documentation/swiftui/viewmodifier
+
 https://developer.apple.com/documentation/swiftui/view-style-modifiers
+
 https://www.hackingwithswift.com/quick-start/swiftui/customizing-button-with-buttonstyle
 
 Task 1
