@@ -1,6 +1,7 @@
 ## Modifier
 
 **Links:**
+
 https://developer.apple.com/documentation/swiftui/view/modifier(_:)
 
 https://www.hackingwithswift.com/books/ios-swiftui/custom-modifiers
