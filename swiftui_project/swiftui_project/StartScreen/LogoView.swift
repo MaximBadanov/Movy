@@ -14,9 +14,9 @@ struct LogoView: View {
                               weight: .bold))
             VStack(spacing: UISize.size8) {
                 UIFunctions.createText(text: "Choose your best movie for",
-                                       foregroundColor: .black )
+                                       foregroundColor: nil )
                 UIFunctions.createText(text: "tonight quickly.",
-                                       foregroundColor: .black )
+                                       foregroundColor: nil )
             }
             .font(Font.system(size: UISize.size24,
                               weight: .regular))
