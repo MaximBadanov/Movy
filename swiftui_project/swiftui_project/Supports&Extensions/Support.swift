@@ -20,18 +20,17 @@ enum Icons {
 
 
 enum Names {
-    case movi
+    case movy
     var name: String {
         switch self {
-            case .movi:
-                return "Movi"
+            case .movy:
+                return "Movy"
         }
     }
 }
 
 
 struct UIFunctions {
-    
    static func createText(text: String,
                           foregroundColor: Color?) -> Text {
         let text = Text(text)

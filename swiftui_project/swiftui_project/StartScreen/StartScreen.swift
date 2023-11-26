@@ -13,21 +13,21 @@ struct StartScreen: View {
                 UIFunctions.createImage(imageName: Icons.tvAndHiFiSpeaker.icon,
                                         renderingMode: .original)
             }
-                   .font(.system(size: UISize.size24))
+                   .customTextStyle(size: UISize.size24,
+                                    weight: .regular)
             Spacer(minLength: UISize.size8)
             LogoView()
             Spacer(minLength: UISize.size8)
             Button("Get Started") {
                 // 
             }
-            .foregroundColor(.white)
-            .font(Font.system(size: UISize.size16,
-                              weight: .medium))
-            .padding(.vertical, UISize.size16)
-            .frame(maxWidth: .infinity)
-            .background(Color.redCustom)
-            .cornerRadius(UISize.size16)
-            .padding(.horizontal, UISize.size40)
+            .customButton(foregroundColor: .white,
+                          background: .redCustom ?? .red,
+                          fontSize: UISize.size16,
+                          fontWeight: .medium,
+                          paddingVertical: UISize.size16,
+                          paddingHorizontal: UISize.size40,
+                          cornerRadius: UISize.size16)
         }
         .padding(.bottom, UISize.size16)
     }
