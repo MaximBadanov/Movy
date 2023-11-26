@@ -3,12 +3,15 @@ import SwiftUI
 
 struct StartScreen: View {
     var body: some View {
-        VStack {
+        VStack(spacing: UISize.size8) {
             HStack(alignment: .firstTextBaseline,
                    spacing: UISize.size8) {
-                Icons.tvUsual
-                Icons.tvWithWifi
-                Icons.tvAndHiFiSpeaker
+                UIFunctions.createImage(imageName: Icons.tv.icon,
+                                        renderingMode: .original)
+                UIFunctions.createImage(imageName: Icons.tvWithWifi.icon,
+                                        renderingMode: .template)
+                UIFunctions.createImage(imageName: Icons.tvAndHiFiSpeaker.icon,
+                                        renderingMode: .original)
             }
                    .font(.system(size: UISize.size24))
             Spacer(minLength: UISize.size8)
