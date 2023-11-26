@@ -18,7 +18,7 @@ struct StartScreen: View {
             LogoView()
             Spacer(minLength: UISize.size8)
             Button("Get Started") {
-                // Действие при нажатии кнопки
+                // 
             }
             .foregroundColor(.white)
             .font(Font.system(size: UISize.size16,
