@@ -24,7 +24,7 @@ enum Names {
     var name: String {
         switch self {
             case .movi:
-                return "Movi"
+                return "Movy"
         }
     }
 }
