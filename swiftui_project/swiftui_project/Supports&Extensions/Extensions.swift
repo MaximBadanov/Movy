@@ -2,11 +2,11 @@ import SwiftUI
 
 
 extension Color {
-    static var redCustom: Color? {
-        Color("customRed")
+    static var redCustom: Color {
+        return Color("customRed")
     }
     
-    static var grayCustom: Color? {
-        Color("customGray")
+    static var grayCustom: Color {
+        return Color("customGray")
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1BC7122B165E33006B8BCF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7112B165E33006B8BCF /* AppLogo.swift */; };
+		9D1BC7142B165E66006B8BCF /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7132B165E66006B8BCF /* Icons.swift */; };
 		9D68A7822B08FA7D005F546A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* Extensions.swift */; };
 		9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */; };
 		9D97D84E2AFA52BF003F10B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D1BC7112B165E33006B8BCF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
+		9D1BC7132B165E66006B8BCF /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		9D68A7812B08FA7D005F546A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9D97D8462AFA52BE003F10B5 /* swiftui_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectApp.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				9D68A7812B08FA7D005F546A /* Extensions.swift */,
 				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
 				9DB350DE2AFECF8D00283DE9 /* Support.swift */,
+				9D1BC7112B165E33006B8BCF /* AppLogo.swift */,
+				9D1BC7132B165E66006B8BCF /* Icons.swift */,
 			);
 			path = "Supports&Extensions";
 			sourceTree = "<group>";
@@ -292,8 +298,10 @@
 			files = (
 				9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */,
 				9D68A7822B08FA7D005F546A /* Extensions.swift in Sources */,
+				9D1BC7122B165E33006B8BCF /* AppLogo.swift in Sources */,
 				9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */,
 				9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */,
+				9D1BC7142B165E66006B8BCF /* Icons.swift in Sources */,
 				9DB350DF2AFECF8D00283DE9 /* Support.swift in Sources */,
 				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
 				9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */,
