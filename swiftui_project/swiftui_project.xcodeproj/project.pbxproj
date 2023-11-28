@@ -89,11 +89,11 @@
 		9D68A7832B08FCA4005F546A /* Supports&Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9D68A7812B08FA7D005F546A /* Extensions.swift */,
-				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
-				9DB350DE2AFECF8D00283DE9 /* Support.swift */,
 				9D1BC7112B165E33006B8BCF /* AppLogo.swift */,
+				9D68A7812B08FA7D005F546A /* Extensions.swift */,
 				9D1BC7132B165E66006B8BCF /* Icons.swift */,
+				9DB350DE2AFECF8D00283DE9 /* Support.swift */,
+				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
 			);
 			path = "Supports&Extensions";
 			sourceTree = "<group>";
@@ -160,8 +160,8 @@
 		9DB350D72AFE52B600283DE9 /* StartScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9DB350D52AFE529600283DE9 /* StartScreen.swift */,
 				9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */,
+				9DB350D52AFE529600283DE9 /* StartScreen.swift */,
 			);
 			path = StartScreen;
 			sourceTree = "<group>";
