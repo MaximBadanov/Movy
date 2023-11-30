@@ -1,7 +1,7 @@
 
 
 enum Logo: String {
-    case movi = "Movy"
+    case movy = "Movy"
     var name: String {
         return self.rawValue
     }

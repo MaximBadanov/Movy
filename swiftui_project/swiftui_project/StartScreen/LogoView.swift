@@ -6,7 +6,7 @@ struct LogoView: View {
         VStack(spacing: UISize.size24) {
             HStack(spacing: UISize.size8) {
                 UIFunctions.createText(
-                    text: Logo.movi.name,
+                    text: Logo.movy.name,
                     foregroundColor: .customGray)
                 UIFunctions.createText(
                     text: ".",
