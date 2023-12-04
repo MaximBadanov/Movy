@@ -13,7 +13,6 @@
 		9D1BC71E2B18CD6C006B8BCF /* ViewButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC71D2B18CD6C006B8BCF /* ViewButtonExtension.swift */; };
 		9D1BC7202B18CDC7006B8BCF /* ViewTextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC71F2B18CDC7006B8BCF /* ViewTextExtension.swift */; };
 		9D1BC7812B1E39F9006B8BCF /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */; };
-		9D1BC7832B1E3A30006B8BCF /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7822B1E3A30006B8BCF /* CustomText.swift */; };
 		9D68A7822B08FA7D005F546A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* ColorExtension.swift */; };
 		9D89F8612B13A70800FE23BE /* TextStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89F8602B13A70800FE23BE /* TextStyleModifier.swift */; };
 		9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */; };
@@ -52,7 +51,6 @@
 		9D1BC71D2B18CD6C006B8BCF /* ViewButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButtonExtension.swift; sourceTree = "<group>"; };
 		9D1BC71F2B18CDC7006B8BCF /* ViewTextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextExtension.swift; sourceTree = "<group>"; };
 		9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
-		9D1BC7822B1E3A30006B8BCF /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		9D68A7812B08FA7D005F546A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		9D89F8602B13A70800FE23BE /* TextStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleModifier.swift; sourceTree = "<group>"; };
 		9D97D8462AFA52BE003F10B5 /* swiftui_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +100,6 @@
 				9D1BC7172B18C93C006B8BCF /* AppLogo.swift */,
 				9D68A7812B08FA7D005F546A /* ColorExtension.swift */,
 				9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */,
-				9D1BC7822B1E3A30006B8BCF /* CustomText.swift */,
 				9D1BC71B2B18CBA3006B8BCF /* PrimaryButtonStyle.swift */,
 				9D1BC7192B18C9A5006B8BCF /* Icons.swift */,
 				9D89F8602B13A70800FE23BE /* TextStyleModifier.swift */,
@@ -324,7 +321,6 @@
 				9D1BC7202B18CDC7006B8BCF /* ViewTextExtension.swift in Sources */,
 				9D1BC71A2B18C9A5006B8BCF /* Icons.swift in Sources */,
 				9D1BC7182B18C93C006B8BCF /* AppLogo.swift in Sources */,
-				9D1BC7832B1E3A30006B8BCF /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
