@@ -7,19 +7,19 @@ struct StartScreen: View {
             HStack(
                 alignment: .firstTextBaseline,
                 spacing: UISize.size8) {
-                UIFunctions.createImage(
-                    imageName: Icons.tv.icon,
-                    renderingMode: .original)
-                UIFunctions.createImage(
-                    imageName: Icons.tvWithWifi.icon,
-                    renderingMode: .template)
-                UIFunctions.createImage(
-                    imageName: Icons.tvAndHiFiSpeaker.icon,
-                    renderingMode: .original)
-            }
-                   .font(
-                    Font.system(
-                        size: UISize.size24))
+                    CustomImage(imageName: Icons.tv.icon,
+                                renderingMode: .original,
+                                size: UISize.size24,
+                                color: nil)
+                    CustomImage(imageName: Icons.tvWithWifi.icon,
+                                renderingMode: .template,
+                                size: UISize.size24,
+                                color: nil)
+                    CustomImage(imageName: Icons.tvAndHiFiSpeaker.icon,
+                                renderingMode: .original,
+                                size: UISize.size24,
+                                color: nil)
+                }
             Spacer(minLength: UISize.size8)
             LogoView()
             Spacer(minLength: UISize.size8)

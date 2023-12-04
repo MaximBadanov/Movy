@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9D1BC7122B165E33006B8BCF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7112B165E33006B8BCF /* AppLogo.swift */; };
 		9D1BC7142B165E66006B8BCF /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7132B165E66006B8BCF /* Icons.swift */; };
+		9D1BC77D2B1E2880006B8BCF /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC77C2B1E2880006B8BCF /* CustomText.swift */; };
+		9D1BC77F2B1E2899006B8BCF /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC77E2B1E2899006B8BCF /* CustomImage.swift */; };
 		9D68A7822B08FA7D005F546A /* СolorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* СolorExtension.swift */; };
 		9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */; };
 		9D97D84E2AFA52BF003F10B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		9D97D86A2AFA52BF003F10B5 /* swiftui_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */; };
 		9D97D86C2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */; };
 		9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB350D52AFE529600283DE9 /* StartScreen.swift */; };
-		9DB350DF2AFECF8D00283DE9 /* UIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB350DE2AFECF8D00283DE9 /* UIFunctions.swift */; };
 		9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */; };
 		9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		9D1BC7112B165E33006B8BCF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		9D1BC7132B165E66006B8BCF /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		9D1BC77C2B1E2880006B8BCF /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		9D1BC77E2B1E2899006B8BCF /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		9D68A7812B08FA7D005F546A /* СolorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СolorExtension.swift"; sourceTree = "<group>"; };
 		9D97D8462AFA52BE003F10B5 /* swiftui_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectApp.swift; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 		9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9DB350D52AFE529600283DE9 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		9DB350DD2AFEB02700283DE9 /* swiftui-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "swiftui-project-Info.plist"; sourceTree = SOURCE_ROOT; };
-		9DB350DE2AFECF8D00283DE9 /* UIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFunctions.swift; sourceTree = "<group>"; };
 		9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,8 +93,9 @@
 			children = (
 				9D1BC7112B165E33006B8BCF /* AppLogo.swift */,
 				9D68A7812B08FA7D005F546A /* СolorExtension.swift */,
+				9D1BC77E2B1E2899006B8BCF /* CustomImage.swift */,
+				9D1BC77C2B1E2880006B8BCF /* CustomText.swift */,
 				9D1BC7132B165E66006B8BCF /* Icons.swift */,
-				9DB350DE2AFECF8D00283DE9 /* UIFunctions.swift */,
 				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
 			);
 			path = "Supports&Extensions";
@@ -299,12 +302,13 @@
 				9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */,
 				9D68A7822B08FA7D005F546A /* СolorExtension.swift in Sources */,
 				9D1BC7122B165E33006B8BCF /* AppLogo.swift in Sources */,
+				9D1BC77F2B1E2899006B8BCF /* CustomImage.swift in Sources */,
 				9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */,
 				9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */,
 				9D1BC7142B165E66006B8BCF /* Icons.swift in Sources */,
-				9DB350DF2AFECF8D00283DE9 /* UIFunctions.swift in Sources */,
 				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
 				9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */,
+				9D1BC77D2B1E2880006B8BCF /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
