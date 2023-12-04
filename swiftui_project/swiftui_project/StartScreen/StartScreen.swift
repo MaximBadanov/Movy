@@ -27,7 +27,7 @@ struct StartScreen: View {
             Button("Get Started") {
                 //
             }
-            .primaryButtonStyle()
+            .buttonStyle(.primaryStyle)
             .padding(.horizontal, UISize.size40)
             
         }
