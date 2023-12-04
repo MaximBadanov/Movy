@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9D1BC7122B165E33006B8BCF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7112B165E33006B8BCF /* AppLogo.swift */; };
 		9D1BC7142B165E66006B8BCF /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7132B165E66006B8BCF /* Icons.swift */; };
-		9D1BC77D2B1E2880006B8BCF /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC77C2B1E2880006B8BCF /* CustomText.swift */; };
 		9D1BC77F2B1E2899006B8BCF /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC77E2B1E2899006B8BCF /* CustomImage.swift */; };
 		9D68A7822B08FA7D005F546A /* СolorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* СolorExtension.swift */; };
 		9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		9D1BC7112B165E33006B8BCF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		9D1BC7132B165E66006B8BCF /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
-		9D1BC77C2B1E2880006B8BCF /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		9D1BC77E2B1E2899006B8BCF /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		9D68A7812B08FA7D005F546A /* СolorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СolorExtension.swift"; sourceTree = "<group>"; };
 		9D97D8462AFA52BE003F10B5 /* swiftui_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +92,6 @@
 				9D1BC7112B165E33006B8BCF /* AppLogo.swift */,
 				9D68A7812B08FA7D005F546A /* СolorExtension.swift */,
 				9D1BC77E2B1E2899006B8BCF /* CustomImage.swift */,
-				9D1BC77C2B1E2880006B8BCF /* CustomText.swift */,
 				9D1BC7132B165E66006B8BCF /* Icons.swift */,
 				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
 			);
@@ -308,7 +305,6 @@
 				9D1BC7142B165E66006B8BCF /* Icons.swift in Sources */,
 				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
 				9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */,
-				9D1BC77D2B1E2880006B8BCF /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
