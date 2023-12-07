@@ -15,4 +15,7 @@ struct CustomImage: View {
             .foregroundColor(color)
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> task_b
