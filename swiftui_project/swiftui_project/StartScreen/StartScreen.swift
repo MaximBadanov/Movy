@@ -25,7 +25,7 @@ struct StartScreen: View {
             LogoView()
             Spacer(minLength: UISize.size8)
             Button("Get Started") {
-                //
+                // действие по нажатию кнопки
             }
             .buttonStyle(.primaryStyle)
             .padding(.horizontal, UISize.size40)
