@@ -15,7 +15,7 @@ struct GenresScreen: View {
             Spacer(minLength: UISize.size8)
             HStack(spacing: UISize.size8) {
                 Spacer(minLength: UISize.size8)
-                    .padding(.leading, UISize.size24)
+                    .padding(.horizontal, UISize.size24)
                 Button("Continue") {
                     //
                 }
@@ -23,7 +23,7 @@ struct GenresScreen: View {
                 .padding(.trailing, UISize.size24)
             }
         }
-        .padding(.bottom, UISize.size16)
+               .padding(.bottom, UISize.size16)
     }
 }
 
