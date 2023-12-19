@@ -2,7 +2,6 @@ import SwiftUI
 
 
 struct GenresView: View {
-    @State private var selectedFrame: Bool = Genres.selectedFrame
     var body: some View {
         ScrollView(.horizontal,
                    showsIndicators: false) {
@@ -23,9 +22,6 @@ struct GenresView: View {
                                        genre: .sience)
                 Genres.createGenreView(backgroundColor: .teal,
                                        genre: .horror)
-            }
-            .onTapGesture {
-                self.selectedFrame.toggle()
             }
         }
     }

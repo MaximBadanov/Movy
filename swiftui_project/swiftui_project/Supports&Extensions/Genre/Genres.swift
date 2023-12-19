@@ -36,18 +36,13 @@ struct Genres {
         }
     }
     
-    static var selectedFrame: Bool = false
     
     static  func createGenreView(backgroundColor: Color,
                                  genre: Genres) -> some View {
         return VStack(spacing: UISize.size8) {
             ZStack(alignment: .center) {
                 Rectangle()
-                    .border(self.selectedFrame ? backgroundColor : .clear, width: 4)
                     .genreFrame(backgroundColor: backgroundColor)
-                    .onTapGesture {
-                        self.selectedFrame.toggle()
-                    }
                 Text(genre.instance.emoji)
                     .textStyle(size: UISize.size24,
                                weight: .regular)
