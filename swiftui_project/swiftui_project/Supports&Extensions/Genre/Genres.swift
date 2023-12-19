@@ -3,7 +3,6 @@ import SwiftUI
 
 struct Genres {
     
-    
     enum Genres {
         case action
         case advanture
@@ -37,7 +36,7 @@ struct Genres {
     }
     
     
-    static  func createGenreView(backgroundColor: Color,
+    static func createGenreView(backgroundColor: Color,
                                  genre: Genres) -> some View {
         return VStack(spacing: UISize.size8) {
             ZStack(alignment: .center) {
