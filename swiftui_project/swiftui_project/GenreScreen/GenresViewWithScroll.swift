@@ -2,7 +2,6 @@ import SwiftUI
 
 
 struct GenresViewWithScroll: View {
-    
     var body: some View {
         ScrollView(.horizontal,
                    showsIndicators: false) {
