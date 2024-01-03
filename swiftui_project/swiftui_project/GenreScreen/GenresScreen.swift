@@ -11,7 +11,7 @@ struct GenresScreen: View {
                          UISize.size24)
                 .textStyle(size: UISize.size32,
                            weight: .bold)
-            GenresView()
+            GenresViewWithScroll()
             Spacer(minLength: UISize.size8)
             HStack(spacing: UISize.size8) {
                 Spacer(minLength: UISize.size8)
