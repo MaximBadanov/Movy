@@ -26,8 +26,3 @@ struct GenreButton: View {
         }
     }
 }
-
-#Preview {
-    GenreButton(backgroundColor: AllGenres.action.instance.color,
-              emoji: AllGenres.action.instance.emoji)
-}
