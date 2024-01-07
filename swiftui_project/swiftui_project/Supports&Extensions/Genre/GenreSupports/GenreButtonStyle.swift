@@ -2,13 +2,24 @@ import SwiftUI
 
 
 struct GenreButtonStyle: ButtonStyle {
-    var backgroundColor: Color
+    let backgroundColor: Color
+    let isSelected: Bool
+    let size = UISize.size64
+    let halfOpacity = 0.5
+    let lineWidth: CGFloat = 4
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(width: UISize.size64,
-                   height: UISize.size64)
-            .background(backgroundColor.opacity(0.5))
+            .frame(
+                width: size,
+                height: size
+            )
+            .background(backgroundColor.opacity(halfOpacity))
             .cornerRadius(UISize.size8)
+            .overlay(
+                RoundedRectangle(cornerRadius: UISize.size8)
+                    .stroke(isSelected ? backgroundColor : Color.clear, lineWidth: lineWidth)
+                )
     }
 }
 
