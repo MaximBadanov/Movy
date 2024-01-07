@@ -18,8 +18,11 @@ struct GenreButtonStyle: ButtonStyle {
             .cornerRadius(UISize.size8)
             .overlay(
                 RoundedRectangle(cornerRadius: UISize.size8)
-                    .stroke(isSelected ? backgroundColor : Color.clear, lineWidth: lineWidth)
-                )
+                    .stroke(
+                        isSelected ? backgroundColor : Color.clear,
+                        lineWidth: lineWidth
+                    )
+            )
     }
 }
 
