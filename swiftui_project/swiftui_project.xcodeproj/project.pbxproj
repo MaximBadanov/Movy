@@ -14,6 +14,8 @@
 		9D1BC7202B18CDC7006B8BCF /* ViewTextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC71F2B18CDC7006B8BCF /* ViewTextExtension.swift */; };
 		9D1BC7812B1E39F9006B8BCF /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */; };
 		9D49AA742B50690800FFA152 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49AA732B50690800FFA152 /* ResultView.swift */; };
+		9D49AA772B506C8400FFA152 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49AA762B506C8400FFA152 /* MovieView.swift */; };
+		9D49AA7D2B5075AA00FFA152 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49AA7C2B5075AA00FFA152 /* LoaderView.swift */; };
 		9D6859252B45A59C00A7C2CD /* GenreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6859242B45A59C00A7C2CD /* GenreButton.swift */; };
 		9D68A7822B08FA7D005F546A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* ColorExtension.swift */; };
 		9D70A0732B45C88700EC0092 /* GenreButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70A0722B45C88700EC0092 /* GenreButtonStyle.swift */; };
@@ -60,6 +62,8 @@
 		9D1BC71F2B18CDC7006B8BCF /* ViewTextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextExtension.swift; sourceTree = "<group>"; };
 		9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		9D49AA732B50690800FFA152 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		9D49AA762B506C8400FFA152 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		9D49AA7C2B5075AA00FFA152 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		9D6859242B45A59C00A7C2CD /* GenreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButton.swift; sourceTree = "<group>"; };
 		9D68A7812B08FA7D005F546A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		9D70A0722B45C88700EC0092 /* GenreButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonStyle.swift; sourceTree = "<group>"; };
@@ -132,13 +136,23 @@
 			isa = PBXGroup;
 			children = (
 				9D49AA732B50690800FFA152 /* ResultView.swift */,
+				9D49AA762B506C8400FFA152 /* MovieView.swift */,
 			);
 			path = ResultView;
+			sourceTree = "<group>";
+		};
+		9D49AA7B2B50757300FFA152 /* LoadIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				9D49AA7C2B5075AA00FFA152 /* LoaderView.swift */,
+			);
+			path = LoadIndicator;
 			sourceTree = "<group>";
 		};
 		9D68A7832B08FCA4005F546A /* Supports&Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9D49AA7B2B50757300FFA152 /* LoadIndicator */,
 				9D1BC7842B1E534E006B8BCF /* Button */,
 				9D8307602B2B3B2D00C6B377 /* Genre */,
 				9D1BC7852B1E5374006B8BCF /* Text */,
@@ -382,6 +396,7 @@
 			files = (
 				9D1BC7812B1E39F9006B8BCF /* CustomImage.swift in Sources */,
 				9D83075F2B2799AD00C6B377 /* AllGenres.swift in Sources */,
+				9D49AA7D2B5075AA00FFA152 /* LoaderView.swift in Sources */,
 				9D8307572B275CD900C6B377 /* GenresScreen.swift in Sources */,
 				9D1BC71E2B18CD6C006B8BCF /* ButtonStyleExtension.swift in Sources */,
 				9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */,
@@ -401,6 +416,7 @@
 				9D1BC71A2B18C9A5006B8BCF /* Icons.swift in Sources */,
 				9D1BC7182B18C93C006B8BCF /* AppLogo.swift in Sources */,
 				9D70A0752B45EC5A00EC0092 /* GenreButtonExtension.swift in Sources */,
+				9D49AA772B506C8400FFA152 /* MovieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

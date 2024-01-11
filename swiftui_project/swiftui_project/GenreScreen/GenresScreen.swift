@@ -17,9 +17,8 @@ struct GenresScreen: View {
             HStack(spacing: UISize.size8) {
                 Spacer(minLength: UISize.size8)
                     .padding(.horizontal, UISize.size24)
-                Button("Continue") {
-                    //
-                }
+                NavigationLink("Continue",
+                               destination: ResultView())
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)
             }
