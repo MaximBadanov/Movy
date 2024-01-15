@@ -1,9 +1,10 @@
 import SwiftUI
 
-struct ResultView: View {
+
+struct LoaderView: View {
     @State private var isLoading: Bool = true
     private let scaleSize: CGFloat = 2
-
+    
     var body: some View {
         if isLoading {
             ProgressView()
@@ -17,20 +18,14 @@ struct ResultView: View {
                         }
                     }
                 }
-        } else {
-            Text("Your movie for today")
-                .textStyle(size: UISize.size24,
-                           weight: .bold)
-            Spacer(minLength: UISize.size8)
-            MovieView()
-            Spacer(minLength: UISize.size8)
-            Text("This movie is showed for you just once")
-                .textStyle(size: UISize.size16,
-                           weight: .light)
         }
     }
 }
 
 #Preview {
-    ResultView()
+    LoaderView()
 }
+
+
+
+
