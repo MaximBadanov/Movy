@@ -8,13 +8,11 @@ struct LoaderView: View {
     var body: some View {
         if isLoading {
             ProgressView()
-                .frame(maxWidth: .infinity,
-                       maxHeight: .infinity)
                 .scaleEffect(scaleSize)
                 .onAppear() {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         withAnimation {
-                            isLoading = false
+                            isLoading.toggle()
                         }
                     }
                 }

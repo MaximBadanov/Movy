@@ -1,23 +1,9 @@
 import SwiftUI
 
 struct ResultView: View {
-    @State private var isLoading: Bool = true
-    private let scaleSize: CGFloat = 2
-
+    
     var body: some View {
-        if isLoading {
-            ProgressView()
-                .frame(maxWidth: .infinity,
-                       maxHeight: .infinity)
-                .scaleEffect(scaleSize)
-                .onAppear() {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        withAnimation {
-                            isLoading = false
-                        }
-                    }
-                }
-        } else {
+        VStack {
             Text("Your movie for today")
                 .textStyle(size: UISize.size24,
                            weight: .bold)
@@ -28,6 +14,7 @@ struct ResultView: View {
                 .textStyle(size: UISize.size16,
                            weight: .light)
         }
+                .withLoader(isLoading: true)
     }
 }
 
