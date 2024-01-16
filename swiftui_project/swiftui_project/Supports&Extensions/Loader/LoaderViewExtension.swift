@@ -2,7 +2,7 @@ import SwiftUI
 
 
 extension View {
-    func withLoader(isLoading: Bool) -> some View {
+    func withLoader() -> some View {
         ZStack {
             self
             LoaderView()

@@ -14,7 +14,7 @@ struct ResultView: View {
                 .textStyle(size: UISize.size16,
                            weight: .light)
         }
-                .withLoader(isLoading: true)
+                .withLoader()
     }
 }
 
