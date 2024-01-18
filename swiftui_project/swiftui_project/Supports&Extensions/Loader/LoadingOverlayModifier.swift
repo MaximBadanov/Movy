@@ -1,14 +1,11 @@
 import SwiftUI
 
 
-struct LoaderView: View {
-    @State private var isLoading: Bool = true
-    private let scaleSize: CGFloat = 2
-    
-    var body: some View {
+struct LoadingOverlayModifier: ViewModifier {
+    @Binding var isLoading: Bool
+    func body(content: Content) -> some View {
         if isLoading {
-            ProgressView()
-                .scaleEffect(scaleSize)
+            LoadingOverlay()
                 .onAppear() {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         withAnimation {
@@ -16,14 +13,8 @@ struct LoaderView: View {
                         }
                     }
                 }
+        } else {
+            content
         }
     }
 }
-
-#Preview {
-    LoaderView()
-}
-
-
-
-
