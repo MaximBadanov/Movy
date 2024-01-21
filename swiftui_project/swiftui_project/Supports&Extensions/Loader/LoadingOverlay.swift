@@ -7,8 +7,10 @@ struct LoadingOverlay: View {
     var body: some View {
         Spacer(minLength: UISize.size8)
         ProgressView("Please wait")
-            .textStyle(size: UISize.size8,
-                       weight: .light)
+            .textStyle(
+                size: UISize.size8,
+                weight: .light
+            )
             .scaleEffect(scaleSize)
             .tint(Color.customGray)
         Spacer(minLength: UISize.size8)

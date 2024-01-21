@@ -3,6 +3,7 @@ import SwiftUI
 
 struct LoadingOverlayModifier: ViewModifier {
     @State var isLoading: Bool = true
+    
     func body(content: Content) -> some View {
         if isLoading {
             LoadingOverlay()
