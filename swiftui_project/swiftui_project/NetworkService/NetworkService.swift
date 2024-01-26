@@ -14,7 +14,7 @@ class NetworkService: NetworkServiceProtocol {
         request.allHTTPHeaderFields = headers
         URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
             DispatchQueue.main.async {
-                if let error = error {
+                if error != nil {
                     print("requestJSON error")
                 }
                 guard let data = data else { return }
