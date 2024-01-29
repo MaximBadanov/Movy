@@ -6,7 +6,7 @@ struct ResultView: View {
         MovieView()
             .withLoader(isLoading: true)
             .onAppear() {
-                network.fetchMovies()
+                network.makeRequest()
             }
     }
 }
