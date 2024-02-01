@@ -1,0 +1,4 @@
+protocol NetworkServiceProtocol {
+    func makeRequest()
+
+}
