@@ -2,13 +2,13 @@ import Foundation
 class NetworkService: NetworkServiceProtocol {
     func makeRequest() {
         let headers = [
-            "accept": Header.accept.meaning,
-            "Authorization": Header.token.meaning
+            "accept": Header.accept.rawValue,
+            "Authorization": Header.token.rawValue
         ]
-        let urlString = API.moviedbGenres.meaning
+        let urlString = API.moviedbGenres.rawValue
         guard let url = URL(string: urlString) else { return }
         var request = URLRequest(url: url)
-        request.httpMethod = HTTPMethods.get.method
+        request.httpMethod = HTTPMethods.get.rawValue
         request.allHTTPHeaderFields = headers
         URLSession.shared.dataTask(with: request as URLRequest) { data, response, error in
             if error != nil {
