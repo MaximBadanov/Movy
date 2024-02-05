@@ -18,7 +18,9 @@ class NetworkService: NetworkServiceProtocol {
             guard let response = response as? HTTPURLResponse else { fatalError() }
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                let genres = try JSONDecoder().decode(GenresModel.self, from: data)
                 print("requestJSON success")
+                print(genres.genres[0])
                 print(json)
             } catch {
                 print("=== Response Code: \(response.statusCode)")
