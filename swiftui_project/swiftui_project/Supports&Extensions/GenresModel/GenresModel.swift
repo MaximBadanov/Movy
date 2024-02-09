@@ -1,7 +1,8 @@
-struct GenresModel: Decodable {
-    var genres: [GenreModel]
+struct GenresResponse: Decodable {
+    let genres: [GenreResponseModel]
 }
 
-struct GenreModel: Decodable {
-    var name: String
+struct GenreResponseModel: Decodable {
+    let id: Int
+    let name: String
 }
