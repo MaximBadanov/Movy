@@ -5,6 +5,7 @@ class NetworkService: NetworkServiceProtocol {
             "accept": Header.accept.rawValue,
             "Authorization": Header.token.rawValue
         ]
+
         let urlString = API.moviedbGenres.rawValue
         guard let url = URL(string: urlString) else { return }
         var request = URLRequest(url: url)
