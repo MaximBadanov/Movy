@@ -1,4 +1,6 @@
 protocol NetworkServiceProtocol {
-    func makeRequest()
-
+    func makeRequest<T: Decodable>(urlString: String,
+                                   httpMethod: HTTPMethods,
+                                   modelToParse: T.Type)
+    
 }

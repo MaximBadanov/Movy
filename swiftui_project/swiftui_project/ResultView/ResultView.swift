@@ -6,7 +6,9 @@ struct ResultView: View {
         MovieView()
             .withLoader(isLoading: true)
             .onAppear() {
-                network.makeRequest()
+                network.makeRequest(urlString: URLS.moviedbGenres.rawValue,
+                                    httpMethod: HTTPMethods.get,
+                                    modelToParse: GenresResponse.self)
             }
     }
 }
