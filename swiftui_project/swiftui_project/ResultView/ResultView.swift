@@ -3,6 +3,7 @@ import Combine
 
 struct ResultView: View {
     @State private var subcriber: AnyCancellable?
+    
     private let network = NetworkService()
     private let requestModel = RequestModel(
         urlString: Urls.moviedbGenres.rawValue,
@@ -22,10 +23,9 @@ struct ResultView: View {
                         case .failure(error: let error):
                             print("Finished with error: \(error)")
                         }
-                        
                     }, receiveValue: { genres in
                         genres.genres.forEach { genre in
-                            print("\(genre.name) _______ \(genre.id)")
+                            print("\(genre.name) _______ id: \(genre.id)")
                         }
                     })
             }

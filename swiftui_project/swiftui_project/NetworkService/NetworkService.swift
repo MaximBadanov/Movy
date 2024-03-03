@@ -16,6 +16,5 @@ class NetworkService: NetworkServiceProtocol {
             .map(\.data)
             .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
-        
     }
 }
