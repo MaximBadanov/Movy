@@ -16,8 +16,7 @@ struct DataManager: DataManagerProtocol {
                 }
             }, receiveValue: { data in
                 if let data = data as? GenresResponse {
-                    data.genres.forEach { print("\($0.name) _______ id: \($0.id)")
-                    }
+                    data.genres.forEach { print("\($0.name) _______ id: \($0.id)") }
                 }
             })
     }
