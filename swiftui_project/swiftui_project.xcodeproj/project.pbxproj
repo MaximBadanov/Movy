@@ -203,16 +203,16 @@
 			isa = PBXGroup;
 			children = (
 				9D25A35E2B712F0D00564031 /* GenresModel */,
-				9D49AA7B2B50757300FFA152 /* Loader */,
-				9D1BC7842B1E534E006B8BCF /* Button */,
-				9D8307602B2B3B2D00C6B377 /* Genre */,
 				9D49AA842B5D626600FFA152 /* Movie */,
+				9D8307602B2B3B2D00C6B377 /* Genre */,
+				9D1BC7842B1E534E006B8BCF /* Button */,
 				9D1BC7852B1E5374006B8BCF /* Text */,
-				9D1BC7172B18C93C006B8BCF /* AppLogo.swift */,
-				9D68A7812B08FA7D005F546A /* ColorExtension.swift */,
-				9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */,
-				9D1BC7192B18C9A5006B8BCF /* Icons.swift */,
-				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
+				9D49AA7B2B50757300FFA152 /* Loader */,
+				9D83506C2B9618350093D082 /* Icons */,
+				9D8350702B9618AE0093D082 /* CustomImage */,
+				9D83506E2B9618870093D082 /* Logo */,
+				9D83506F2B9618990093D082 /* Colors */,
+				9D83506D2B96185E0093D082 /* UISize */,
 			);
 			path = "Supports&Extensions";
 			sourceTree = "<group>";
@@ -244,6 +244,46 @@
 				9D70A0762B45ECAC00EC0092 /* GenreSupports */,
 			);
 			path = Genre;
+			sourceTree = "<group>";
+		};
+		9D83506C2B9618350093D082 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				9D1BC7192B18C9A5006B8BCF /* Icons.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		9D83506D2B96185E0093D082 /* UISize */ = {
+			isa = PBXGroup;
+			children = (
+				9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */,
+			);
+			path = UISize;
+			sourceTree = "<group>";
+		};
+		9D83506E2B9618870093D082 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				9D1BC7172B18C93C006B8BCF /* AppLogo.swift */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
+		9D83506F2B9618990093D082 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				9D68A7812B08FA7D005F546A /* ColorExtension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		9D8350702B9618AE0093D082 /* CustomImage */ = {
+			isa = PBXGroup;
+			children = (
+				9D1BC7802B1E39F9006B8BCF /* CustomImage.swift */,
+			);
+			path = CustomImage;
 			sourceTree = "<group>";
 		};
 		9D95B7E62B62C70C00CF660F /* NetworkService */ = {
