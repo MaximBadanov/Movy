@@ -3,20 +3,29 @@ import Combine
 
 
 struct ResultView: View {
-    @State private var subcriber: AnyCancellable?
+    @State private var subscriber: AnyCancellable?
     
-    private let dataManager = DataManager(network: NetworkService())
+    private let dataManager: DataManager
     private let requestModel = RequestModel(
         urlString: Urls.moviedbGenres.rawValue,
         header: Headers.movieDB.header,
         httpMethod: HTTPMethods.get,
         modelToParse: GenresResponse.self)
     
+    init() {
+        guard let network = DIContainer.shared.injectDependency(
+            dependency: NetworkService()
+        ) else {
+            fatalError("Service not found in DI container")
+        }
+        dataManager = DataManager(network: network)
+    }
+    
     var body: some View {
         MovieView()
             .withLoader(isLoading: true)
             .onAppear() {
-                subcriber = dataManager.fetchGenres(requestModel: requestModel)
+                subscriber = dataManager.fetchGenres(requestModel: requestModel)
             }
     }
 }

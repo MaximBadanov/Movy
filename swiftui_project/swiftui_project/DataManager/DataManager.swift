@@ -2,8 +2,12 @@ import Combine
 import SwiftUI
 
 
-struct DataManager: DataManagerProtocol {
+class DataManager {
     var network: NetworkServiceProtocol
+    
+    init(network: NetworkServiceProtocol) {
+        self.network = network
+    }
     
     func fetchGenres<T: Decodable>(requestModel: RequestModel<T>) -> AnyCancellable {
         return network.makeRequest(requestModel: requestModel)
