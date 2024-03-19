@@ -4,5 +4,5 @@ import Combine
 
 protocol DataManagerProtocol {
 
-    func fetchGenres<T: Decodable>(requestModel: RequestModel<T>) -> AnyCancellable
+    func fetchGenres<T: Decodable>(requestModel: RequestModel<T>) -> AnyPublisher<T, Error>
 }
