@@ -1,7 +1,6 @@
-import SwiftUI
 import Combine
 
 
-protocol DataManagerProtocol {
+protocol ResultViewViewModelProtocol {
     func fetchGenres<T: Decodable>(requestModel: RequestModel<T>) -> AnyPublisher<T, Error>
 }

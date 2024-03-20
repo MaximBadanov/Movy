@@ -30,6 +30,8 @@
 		9D68A7822B08FA7D005F546A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* ColorExtension.swift */; };
 		9D70A0732B45C88700EC0092 /* GenreButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70A0722B45C88700EC0092 /* GenreButtonStyle.swift */; };
 		9D70A0752B45EC5A00EC0092 /* GenreButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70A0742B45EC5A00EC0092 /* GenreButtonExtension.swift */; };
+		9D7F9C272BAB0825005A465E /* ResultViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F9C262BAB0825005A465E /* ResultViewViewModel.swift */; };
+		9D7F9C292BAB131F005A465E /* ResultViewViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F9C282BAB131F005A465E /* ResultViewViewModelProtocol.swift */; };
 		9D8307572B275CD900C6B377 /* GenresScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8307562B275CD900C6B377 /* GenresScreen.swift */; };
 		9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */; };
 		9D83075F2B2799AD00C6B377 /* AllGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D83075E2B2799AD00C6B377 /* AllGenres.swift */; };
@@ -91,6 +93,8 @@
 		9D68A7812B08FA7D005F546A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		9D70A0722B45C88700EC0092 /* GenreButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonStyle.swift; sourceTree = "<group>"; };
 		9D70A0742B45EC5A00EC0092 /* GenreButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonExtension.swift; sourceTree = "<group>"; };
+		9D7F9C262BAB0825005A465E /* ResultViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewViewModel.swift; sourceTree = "<group>"; };
+		9D7F9C282BAB131F005A465E /* ResultViewViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewViewModelProtocol.swift; sourceTree = "<group>"; };
 		9D8307562B275CD900C6B377 /* GenresScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresScreen.swift; sourceTree = "<group>"; };
 		9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewWithScroll.swift; sourceTree = "<group>"; };
 		9D83075E2B2799AD00C6B377 /* AllGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGenres.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 		9D49AA752B50691700FFA152 /* ResultView */ = {
 			isa = PBXGroup;
 			children = (
+				9D7F9C252BAAF70E005A465E /* ResultViewViewModel */,
 				9D49AA732B50690800FFA152 /* ResultView.swift */,
 				9D49AA762B506C8400FFA152 /* MovieView.swift */,
 			);
@@ -238,6 +243,15 @@
 				9D70A0742B45EC5A00EC0092 /* GenreButtonExtension.swift */,
 			);
 			path = GenreSupports;
+			sourceTree = "<group>";
+		};
+		9D7F9C252BAAF70E005A465E /* ResultViewViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F9C262BAB0825005A465E /* ResultViewViewModel.swift */,
+				9D7F9C282BAB131F005A465E /* ResultViewViewModelProtocol.swift */,
+			);
+			path = ResultViewViewModel;
 			sourceTree = "<group>";
 		};
 		9D8307552B275C9600C6B377 /* GenreScreen */ = {
@@ -541,6 +555,7 @@
 				9D517B102B68016300477AB2 /* HTTPMethods.swift in Sources */,
 				9D2B90AA2BA1EE5C007F576F /* DIContainer.swift in Sources */,
 				9D1BC71C2B18CBA3006B8BCF /* PrimaryButtonStyle.swift in Sources */,
+				9D7F9C292BAB131F005A465E /* ResultViewViewModelProtocol.swift in Sources */,
 				9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */,
 				9D6859252B45A59C00A7C2CD /* GenreButton.swift in Sources */,
 				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
@@ -549,6 +564,7 @@
 				9D1BC71A2B18C9A5006B8BCF /* Icons.swift in Sources */,
 				9D517B162B680B4B00477AB2 /* Urls.swift in Sources */,
 				9D49AA832B59BAC500FFA152 /* LoadingOverlayModifier.swift in Sources */,
+				9D7F9C272BAB0825005A465E /* ResultViewViewModel.swift in Sources */,
 				9D49AA7F2B55854700FFA152 /* LoadingOverlayExtension.swift in Sources */,
 				9D1BC7182B18C93C006B8BCF /* AppLogo.swift in Sources */,
 				9D119E7E2B963983007DEDA1 /* DataManagerProtocol.swift in Sources */,
