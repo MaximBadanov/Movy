@@ -3,7 +3,7 @@ import Combine
 
 
 struct ResultView: View {
-    private let viewModel = ResultViewViewModel()
+    @ObservedObject private var viewModel = ResultViewViewModel()
     private let requestModel = RequestModel(
         urlString: Urls.moviedbGenres.rawValue,
         header: Headers.movieDB.header,
@@ -14,19 +14,7 @@ struct ResultView: View {
         MovieView()
             .withLoader(isLoading: true)
             .onAppear() {
-                viewModel.subscriber = 
-                viewModel.fetchGenres(requestModel: requestModel)
-                    .sink(receiveCompletion: { completion in
-                        switch completion {
-                        case .finished:
-                            print("Finished")
-                        case .failure(let error):
-                            print("Finished with error: \(error)")
-                        }
-                    }, receiveValue: { data in
-                        data.genres.forEach {
-                            print("Genre: \($0.name), ID: \($0.id)") }
-                    })
+                viewModel.setSubscriber(requestModel: requestModel)
             }
     }
 }

@@ -3,8 +3,7 @@ import Combine
 
 
 class ResultViewViewModel: ObservableObject {
-    var subscriber: AnyCancellable?
-    
+    private var subscriber: AnyCancellable?
     private let dataManager: DataManager
     
     init() {
@@ -14,11 +13,26 @@ class ResultViewViewModel: ObservableObject {
         }
         dataManager = DataManager(network: network)
     }
+    
+    private func fetchGenres(requestModel: RequestModel<GenresResponse>) -> AnyCancellable {
+        return dataManager.fetchGenres(requestModel: requestModel)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    print("Finished")
+                case .failure(let error):
+                    print("Finished with error: \(error)")
+                }
+            }, receiveValue: { data in
+                data.genres.forEach {
+                    print("Genre: \($0.name), ID: \($0.id)")
+                }
+            })
+    }
 }
 
-
 extension ResultViewViewModel: ResultViewViewModelProtocol {
-    func fetchGenres<T: Decodable>(requestModel: RequestModel<T>) -> AnyPublisher<T, Error> {
-        return dataManager.fetchGenres(requestModel: requestModel)
+    func setSubscriber(requestModel: RequestModel<GenresResponse>) {
+        subscriber = fetchGenres(requestModel: requestModel)
     }
 }
