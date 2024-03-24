@@ -14,7 +14,8 @@ struct ResultView: View {
         MovieView()
             .withLoader(isLoading: true)
             .onAppear() {
-                viewModel.subscriber = viewModel.fetchGenres(requestModel: requestModel)
+                viewModel.subscriber = 
+                viewModel.fetchGenres(requestModel: requestModel)
                     .sink(receiveCompletion: { completion in
                         switch completion {
                         case .finished:
