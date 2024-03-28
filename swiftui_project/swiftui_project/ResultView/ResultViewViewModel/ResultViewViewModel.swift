@@ -5,6 +5,11 @@ import Combine
 class ResultViewViewModel: ObservableObject {
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
+    private let requestModel: RequestModel<GenresResponse>  = RequestModel(
+        urlString: Urls.moviedbGenres.rawValue,
+        header: Headers.movieDB.header,
+        httpMethod: HTTPMethods.get,
+        modelToParse: GenresResponse.self)
     
     init() {
         guard let network = DIContainer.shared.injectDependency(
@@ -14,8 +19,11 @@ class ResultViewViewModel: ObservableObject {
         dataManager = DataManager(network: network)
     }
     
-    private func fetchGenres(requestModel: RequestModel<GenresResponse>) -> AnyCancellable {
-        return dataManager.fetchGenres(requestModel: requestModel)
+}
+
+extension ResultViewViewModel: ResultViewViewModelProtocol {
+    func fetchGenres() -> AnyCancellable? {
+        subscriber = dataManager.fetchGenres(requestModel: requestModel)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
@@ -28,11 +36,6 @@ class ResultViewViewModel: ObservableObject {
                     print("Genre: \($0.name), ID: \($0.id)")
                 }
             })
-    }
-}
-
-extension ResultViewViewModel: ResultViewViewModelProtocol {
-    func setSubscriber(requestModel: RequestModel<GenresResponse>) {
-        subscriber = fetchGenres(requestModel: requestModel)
+        return subscriber
     }
 }

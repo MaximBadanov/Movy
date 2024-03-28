@@ -2,5 +2,5 @@ import Combine
 
 
 protocol ResultViewViewModelProtocol {
-   func setSubscriber(requestModel: RequestModel<GenresResponse>)
+    func fetchGenres() -> AnyCancellable?
 }
