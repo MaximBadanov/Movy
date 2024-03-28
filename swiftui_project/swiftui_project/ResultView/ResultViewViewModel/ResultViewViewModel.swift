@@ -5,7 +5,7 @@ import Combine
 class ResultViewViewModel: ObservableObject {
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
-    private let requestModel: RequestModel<GenresResponse>  = RequestModel(
+    private let requestModel: RequestModel<GenresResponse> = RequestModel(
         urlString: Urls.moviedbGenres.rawValue,
         header: Headers.movieDB.header,
         httpMethod: HTTPMethods.get,
