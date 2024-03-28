@@ -18,11 +18,10 @@ class ResultViewViewModel: ObservableObject {
         }
         dataManager = DataManager(network: network)
     }
-    
 }
 
 extension ResultViewViewModel: ResultViewViewModelProtocol {
-    func fetchGenres() -> AnyCancellable? {
+    func fetchGenres()  {
         subscriber = dataManager.fetchGenres(requestModel: requestModel)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -36,6 +35,5 @@ extension ResultViewViewModel: ResultViewViewModelProtocol {
                     print("Genre: \($0.name), ID: \($0.id)")
                 }
             })
-        return subscriber
     }
 }

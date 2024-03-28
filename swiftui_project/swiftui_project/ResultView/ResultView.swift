@@ -9,7 +9,7 @@ struct ResultView: View {
         MovieView()
             .withLoader(isLoading: true)
             .onAppear() {
-               _ = viewModel.fetchGenres()
+                viewModel.fetchGenres()
             }
     }
 }
