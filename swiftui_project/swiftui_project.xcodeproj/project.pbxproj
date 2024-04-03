@@ -32,6 +32,8 @@
 		9D70A0752B45EC5A00EC0092 /* GenreButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70A0742B45EC5A00EC0092 /* GenreButtonExtension.swift */; };
 		9D7F9C272BAB0825005A465E /* ResultViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F9C262BAB0825005A465E /* ResultViewViewModel.swift */; };
 		9D7F9C292BAB131F005A465E /* ResultViewViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F9C282BAB131F005A465E /* ResultViewViewModelProtocol.swift */; };
+		9D7F9C7A2BBDC96B005A465E /* GenreViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F9C792BBDC96B005A465E /* GenreViewViewModel.swift */; };
+		9D7F9C7D2BBDCC78005A465E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F9C7C2BBDCC78005A465E /* MovieModel.swift */; };
 		9D8307572B275CD900C6B377 /* GenresScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8307562B275CD900C6B377 /* GenresScreen.swift */; };
 		9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */; };
 		9D83075F2B2799AD00C6B377 /* AllGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D83075E2B2799AD00C6B377 /* AllGenres.swift */; };
@@ -95,6 +97,8 @@
 		9D70A0742B45EC5A00EC0092 /* GenreButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonExtension.swift; sourceTree = "<group>"; };
 		9D7F9C262BAB0825005A465E /* ResultViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewViewModel.swift; sourceTree = "<group>"; };
 		9D7F9C282BAB131F005A465E /* ResultViewViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewViewModelProtocol.swift; sourceTree = "<group>"; };
+		9D7F9C792BBDC96B005A465E /* GenreViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewViewModel.swift; sourceTree = "<group>"; };
+		9D7F9C7C2BBDCC78005A465E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		9D8307562B275CD900C6B377 /* GenresScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresScreen.swift; sourceTree = "<group>"; };
 		9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewWithScroll.swift; sourceTree = "<group>"; };
 		9D83075E2B2799AD00C6B377 /* AllGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGenres.swift; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 		9D68A7832B08FCA4005F546A /* Supports&Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9D7F9C7B2BBDCC63005A465E /* MovieModel */,
 				9D25A35E2B712F0D00564031 /* GenresModel */,
 				9D49AA842B5D626600FFA152 /* Movie */,
 				9D8307602B2B3B2D00C6B377 /* Genre */,
@@ -254,9 +259,26 @@
 			path = ResultViewViewModel;
 			sourceTree = "<group>";
 		};
+		9D7F9C782BBDC93F005A465E /* GenreViewViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F9C792BBDC96B005A465E /* GenreViewViewModel.swift */,
+			);
+			path = GenreViewViewModel;
+			sourceTree = "<group>";
+		};
+		9D7F9C7B2BBDCC63005A465E /* MovieModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F9C7C2BBDCC78005A465E /* MovieModel.swift */,
+			);
+			path = MovieModel;
+			sourceTree = "<group>";
+		};
 		9D8307552B275C9600C6B377 /* GenreScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9D7F9C782BBDC93F005A465E /* GenreViewViewModel */,
 				9D8307562B275CD900C6B377 /* GenresScreen.swift */,
 				9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */,
 				9D6859242B45A59C00A7C2CD /* GenreButton.swift */,
@@ -547,10 +569,12 @@
 				9D8350762B9623BA0093D082 /* DataManager.swift in Sources */,
 				9D49AA862B5D627F00FFA152 /* Movie.swift in Sources */,
 				9D68A7822B08FA7D005F546A /* ColorExtension.swift in Sources */,
+				9D7F9C7D2BBDCC78005A465E /* MovieModel.swift in Sources */,
 				9D517B142B68064000477AB2 /* Headers.swift in Sources */,
 				9D70A0732B45C88700EC0092 /* GenreButtonStyle.swift in Sources */,
 				9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */,
 				9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */,
+				9D7F9C7A2BBDC96B005A465E /* GenreViewViewModel.swift in Sources */,
 				9D89F8612B13A70800FE23BE /* TextStyleModifier.swift in Sources */,
 				9D517B102B68016300477AB2 /* HTTPMethods.swift in Sources */,
 				9D2B90AA2BA1EE5C007F576F /* DIContainer.swift in Sources */,

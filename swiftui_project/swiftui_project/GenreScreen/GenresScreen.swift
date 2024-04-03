@@ -2,6 +2,7 @@ import SwiftUI
 
 
 struct GenresScreen: View {
+    @ObservedObject private var viewModel = GenreViewViewModel()
     var body: some View {
         VStack(alignment: .leading,
                spacing: UISize.size8) {
@@ -13,6 +14,9 @@ struct GenresScreen: View {
                     weight: .bold
                 )
             GenresViewWithScroll()
+                .onAppear {
+                    viewModel.fetchMovies(genreId: 878)
+                }
             Spacer(minLength: UISize.size8)
             HStack(spacing: UISize.size8) {
                 Spacer(minLength: UISize.size8)
