@@ -23,7 +23,7 @@ struct GenresScreen: View {
                                destination: ResultView()                .onAppear {
                     viewModel.fetchMoviesByGenre(
                         requestModel: RequestModel(
-                            urlString: Urls.crime.rawValue,
+                            urlString: Urls.animation.rawValue,
                             header: Headers.movieDB.header,
                             httpMethod: HTTPMethods.get,
                             modelToParse: MovieResponse.self))
