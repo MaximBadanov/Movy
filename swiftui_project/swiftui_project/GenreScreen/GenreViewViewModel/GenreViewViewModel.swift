@@ -14,12 +14,7 @@ class GenreViewViewModel: ObservableObject  {
     }
 
 extension GenreViewViewModel {
-    func fetchMovies(genreId: Int)  {
-            let requestModel: RequestModel<MovieResponse> = RequestModel(
-                urlString: Urls.moviesByGenre.rawValue + String(genreId),
-                header: Headers.movieDB.header,
-                httpMethod: HTTPMethods.get,
-                modelToParse: MovieResponse.self)
+    func fetchMoviesByGenre(requestModel: RequestModel<MovieResponse>)  {
             subscriber = dataManager.fetchGenres(requestModel: requestModel)
                 .sink(receiveCompletion: { completion in
                     switch completion {
@@ -29,9 +24,8 @@ extension GenreViewViewModel {
                         print("Finished with error: \(error)")
                     }
                 }, receiveValue: { data in
-                    data.results.forEach {
-                        print("Movie: \($0.title), poster: \($0.poster)")
-                    }
+                    guard let movie = data.results.randomElement() else { return }
+                    print("Movie: \(String(describing: movie.title)), Poster: \(String(describing: movie.poster))")
                 })
         }
 }

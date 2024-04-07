@@ -3,6 +3,7 @@ import SwiftUI
 
 struct GenresScreen: View {
     @ObservedObject private var viewModel = GenreViewViewModel()
+    
     var body: some View {
         VStack(alignment: .leading,
                spacing: UISize.size8) {
@@ -14,15 +15,19 @@ struct GenresScreen: View {
                     weight: .bold
                 )
             GenresViewWithScroll()
-                .onAppear {
-                    viewModel.fetchMovies(genreId: 878)
-                }
             Spacer(minLength: UISize.size8)
             HStack(spacing: UISize.size8) {
                 Spacer(minLength: UISize.size8)
                     .padding(.horizontal, UISize.size24)
                 NavigationLink("Continue",
-                               destination: ResultView())
+                               destination: ResultView()                .onAppear {
+                    viewModel.fetchMoviesByGenre(
+                        requestModel: RequestModel(
+                            urlString: Urls.crime.rawValue,
+                            header: Headers.movieDB.header,
+                            httpMethod: HTTPMethods.get,
+                            modelToParse: MovieResponse.self))
+                })
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)
             }

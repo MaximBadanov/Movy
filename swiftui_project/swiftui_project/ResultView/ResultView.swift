@@ -8,9 +8,6 @@ struct ResultView: View {
     var body: some View {
         MovieView()
             .withLoader(isLoading: true)
-            .onAppear() {
-                viewModel.fetchGenres()
-            }
     }
 }
 
