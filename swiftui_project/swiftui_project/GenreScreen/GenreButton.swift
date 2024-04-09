@@ -3,6 +3,7 @@ import SwiftUI
 
 struct GenreButton: View {
     @State private var isSelected: Bool = false
+    
     let title: String
     let emoji: String
     let backgroundColor: Color
