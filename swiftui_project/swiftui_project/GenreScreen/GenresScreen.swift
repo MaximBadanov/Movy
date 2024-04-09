@@ -1,12 +1,12 @@
 import SwiftUI
 
-
 struct GenresScreen: View {
     @ObservedObject private var viewModel = GenreViewViewModel()
-    private var genres: [String] = ["27", "12"]
+    @State private var genres: [String] = ["27", "12"]
+    
     var body: some View {
-        VStack(alignment: .leading,
-               spacing: UISize.size8) {
+        
+        VStack(alignment: .leading, spacing: UISize.size8) {
             Spacer(minLength: UISize.size8)
             Text("Choose Genres")
                 .padding(.leading, UISize.size24)
@@ -15,25 +15,31 @@ struct GenresScreen: View {
                     weight: .bold
                 )
             GenresViewWithScroll()
-            Spacer(minLength: UISize.size8)
-            HStack(spacing: UISize.size8) {
-                Spacer(minLength: UISize.size8)
-                    .padding(.horizontal, UISize.size24)
-                NavigationLink("Continue",
-                               destination: ResultView()
-                    .onAppear {
+                .onAppear {
                     viewModel.fetchMoviesByGenre(
                         requestModel: RequestModel(
                             urlString: Urls.moviesByGenres.rawValue,
                             header: Headers.movieDB.header,
                             httpMethod: HTTPMethods.get,
-                            modelToParse: MovieResponse.self), genres: genres)
-                })
+                            modelToParse: MovieResponse.self
+                        ),
+                        genres: genres
+                    )
+                }
+            Spacer(minLength: UISize.size8)
+            HStack(spacing: UISize.size8) {
+                Spacer(minLength: UISize.size8)
+                    .padding(.horizontal, UISize.size24)
+                NavigationLink("Continue",
+                               destination: ResultView(
+                                title: viewModel.movie?.title ?? "no title",
+                                poster: viewModel.movie?.poster ?? "no poster"
+                               ))
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)
             }
         }
-               .padding(.bottom, UISize.size16)
+        .padding(.bottom, UISize.size16)
     }
 }
 

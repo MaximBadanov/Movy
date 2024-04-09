@@ -3,7 +3,7 @@ struct MovieResponse: Decodable {
 }
 
 struct MovieResponseModel: Decodable {
-    let title: String
+    var title: String
     let poster: String
     
     enum CodingKeys: String, CodingKey {

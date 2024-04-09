@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct MovieView: View {
-    @ObservedObject private var viewModel = GenreViewViewModel()
-    private let jokerMovie = Movie(
-        movieTitle: "Joker" ,
-        genre: "Thriller",
-        posterName: "joker"
-    )
+    @State var title: String
+    @State var poster: String
+    
+    private let baseURL = "https://image.tmdb.org/t/p/"
+    private let posterSize = "w300"
+    
     var body: some View {
         VStack(spacing: UISize.size8) {
             Text("Your movie for today")
@@ -15,14 +15,14 @@ struct MovieView: View {
                     weight: .bold
                 )
             Spacer(minLength: UISize.size8)
-            Image(jokerMovie.posterName)
+            AsyncImage(url: URL(string: baseURL + posterSize + poster))
                 .cornerRadius(UISize.size16)
-            Text(viewModel.movie?.title ?? "NOno" )
+            Text(title)
                 .textStyle(
                     size: UISize.size40,
                     weight: .heavy
                 )
-            Text(jokerMovie.genre)
+            Text("Genre")
                 .textStyle(
                     size: UISize.size24,
                     weight: .medium
@@ -35,10 +35,10 @@ struct MovieView: View {
                     weight: .light
                 )
         }
-        
     }
 }
 
 #Preview {
-    MovieView()
+    MovieView(title: "Movie Title", poster: "Movie Poster")
 }
+
