@@ -1,6 +1,0 @@
-import Combine
-
-
-protocol ResultViewViewModelProtocol {
-
-}

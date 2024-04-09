@@ -3,7 +3,7 @@ import SwiftUI
 
 struct GenresScreen: View {
     @ObservedObject private var viewModel = GenreViewViewModel()
-    
+    private var genres: [String] = ["27", "12"]
     var body: some View {
         VStack(alignment: .leading,
                spacing: UISize.size8) {
@@ -20,13 +20,14 @@ struct GenresScreen: View {
                 Spacer(minLength: UISize.size8)
                     .padding(.horizontal, UISize.size24)
                 NavigationLink("Continue",
-                               destination: ResultView()                .onAppear {
+                               destination: ResultView()
+                    .onAppear {
                     viewModel.fetchMoviesByGenre(
                         requestModel: RequestModel(
-                            urlString: Urls.animation.rawValue,
+                            urlString: Urls.moviesByGenres.rawValue,
                             header: Headers.movieDB.header,
                             httpMethod: HTTPMethods.get,
-                            modelToParse: MovieResponse.self))
+                            modelToParse: MovieResponse.self), genres: genres)
                 })
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)

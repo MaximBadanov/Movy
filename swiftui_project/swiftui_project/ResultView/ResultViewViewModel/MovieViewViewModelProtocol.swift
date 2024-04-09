@@ -1,0 +1,6 @@
+import Combine
+
+
+protocol MovieViewViewModelProtocol {
+
+}

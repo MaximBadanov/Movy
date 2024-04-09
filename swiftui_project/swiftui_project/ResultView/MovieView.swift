@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct MovieView: View {
-    let jokerMovie = Movie(
+    @ObservedObject private var viewModel = GenreViewViewModel()
+    private let jokerMovie = Movie(
         movieTitle: "Joker" ,
         genre: "Thriller",
         posterName: "joker"
     )
-    
     var body: some View {
         VStack(spacing: UISize.size8) {
             Text("Your movie for today")
@@ -17,7 +17,7 @@ struct MovieView: View {
             Spacer(minLength: UISize.size8)
             Image(jokerMovie.posterName)
                 .cornerRadius(UISize.size16)
-            Text(jokerMovie.movieTitle)
+            Text(viewModel.movie?.title ?? "NOno" )
                 .textStyle(
                     size: UISize.size40,
                     weight: .heavy
@@ -35,6 +35,7 @@ struct MovieView: View {
                     weight: .light
                 )
         }
+        
     }
 }
 
