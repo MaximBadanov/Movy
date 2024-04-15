@@ -4,8 +4,8 @@ struct MovieView: View {
     @State var title: String
     @State var poster: String
     
-    private let baseURL = "https://image.tmdb.org/t/p/"
-    private let posterSize = "w300"
+    private let aspectRatioPoster: Double = 2.0/3.0
+    private let opacity: Double = 0.1
     
     var body: some View {
         VStack(spacing: UISize.size8) {
@@ -14,14 +14,30 @@ struct MovieView: View {
                     size: UISize.size24,
                     weight: .bold
                 )
-            Spacer(minLength: UISize.size8)
-            AsyncImage(url: URL(string: baseURL + posterSize + poster))
-                .cornerRadius(UISize.size16)
+                .padding(.bottom, UISize.size16)
+            AsyncImage(url: URL(string: Urls.posterURL.rawValue + poster)) { image in
+                image.resizable()
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(UISize.size16)
+                    .aspectRatio(aspectRatioPoster, contentMode: .fit)
+            } placeholder: {
+                Spacer(minLength: UISize.size16)
+                Image(systemName: "movieclapper")
+                    .resizable()
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(UISize.size8)
+                    .aspectRatio(contentMode: .fit)
+                    .opacity(opacity)
+                    .foregroundColor(.customGray)
+                Spacer(minLength: UISize.size8)
+            }
+            .padding(.horizontal, UISize.size32)
             Text(title)
                 .textStyle(
                     size: UISize.size40,
                     weight: .heavy
                 )
+                .padding(.horizontal, UISize.size16)
             Text("Genre")
                 .textStyle(
                     size: UISize.size24,

@@ -14,4 +14,5 @@ struct ResultView: View {
 
 #Preview {
     ResultView(title: "Title", poster: "Poster")
+
 }

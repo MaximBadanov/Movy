@@ -2,7 +2,7 @@ import SwiftUI
 
 struct GenresScreen: View {
     @ObservedObject private var viewModel = GenreViewViewModel()
-    @State private var genres: [String] = ["27", "12"]
+    @State private var genres: [String] = ["27", "12", "878"]
     
     var body: some View {
         
