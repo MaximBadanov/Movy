@@ -30,6 +30,7 @@ struct MovieView: View {
                     .opacity(opacity)
                     .foregroundColor(.customGray)
                 Spacer(minLength: UISize.size8)
+
             }
             .padding(.horizontal, UISize.size32)
             Text(title)

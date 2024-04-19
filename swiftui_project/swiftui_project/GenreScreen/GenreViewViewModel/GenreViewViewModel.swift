@@ -3,7 +3,7 @@ import SwiftUI
 import Foundation
 
 class GenreViewViewModel: ObservableObject {
-    var movie: MovieResponseModel?
+    @Published var movie: MovieResponseModel?
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
     

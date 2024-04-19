@@ -22,7 +22,7 @@ class NetworkService: NetworkServiceProtocol {
         let urlString = requestModel.urlString
         let parameters: [String: Any] = [
             "with_genres": genreIDs.joined(separator: ","),
-            "page": "\(Int.random(in: 0...10))"
+            "page": "\(Int.random(in: 1...10))"
         ]
         guard var urlComponents = URLComponents(string: urlString) else {
             print("Bad URL")
