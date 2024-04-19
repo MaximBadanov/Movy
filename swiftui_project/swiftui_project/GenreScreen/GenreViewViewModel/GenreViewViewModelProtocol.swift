@@ -1,5 +1,6 @@
 import SwiftUI
 
 protocol GenreViewViewModelProtocol {
-    func fetchMoviesByGenre(requestModel: RequestModel<MovieResponse>, genres: [String])
+    func fetchMoviesByGenre(requestModel: RequestModel<MovieResponse>, genreIDs: [String])
 }
+

@@ -18,9 +18,22 @@ class NetworkService: NetworkServiceProtocol {
             .eraseToAnyPublisher()
     }
     
-    func makeRequest<T: Decodable>(requestModel: RequestModel<T>, genres: [String]) -> AnyPublisher<T,Error> {
-        let genresString = genres.joined(separator: ",")
-        guard let url = URL(string: requestModel.urlString + genresString) else {
+    func makeRequest<T: Decodable>(requestModel: RequestModel<T>, genreIDs: [String]) -> AnyPublisher<T,Error> {
+        let urlString = requestModel.urlString
+        let parameters: [String: Any] = [
+            "with_genres": genreIDs.joined(separator: ","),
+            "page": "\(Int.random(in: 0...10))"
+        ]
+        guard var urlComponents = URLComponents(string: urlString) else {
+            print("Bad URL")
+            return Fail(error: URLError(.badURL))
+                .eraseToAnyPublisher()
+        }
+        
+        urlComponents.queryItems = parameters.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
+        
+        guard let url = urlComponents.url else {
+            print("Failed to create URL")
             return Fail(error: URLError(.badURL))
                 .eraseToAnyPublisher()
         }
@@ -33,4 +46,6 @@ class NetworkService: NetworkServiceProtocol {
             .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
+    
 }
+
