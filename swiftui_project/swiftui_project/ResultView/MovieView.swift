@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct MovieView: View {
-    @State var title: String
-    @State var poster: String
+    let title: String
+    let poster: String
     
     private let aspectRatioPoster: Double = 2.0/3.0
     private let opacity: Double = 0.1
@@ -39,7 +39,7 @@ struct MovieView: View {
                     weight: .heavy
                 )
                 .padding(.horizontal, UISize.size16)
-            Text("Genre")
+            Text(GenreButtonViewModel.shared.genres[0])
                 .textStyle(
                     size: UISize.size24,
                     weight: .medium

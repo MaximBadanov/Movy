@@ -51,7 +51,6 @@
 		9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */; };
 		9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */; };
 		9DEF3A962BC5EEAC005FEC47 /* GenreViewViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEF3A952BC5EEAC005FEC47 /* GenreViewViewModelProtocol.swift */; };
-		9DFF3B102BCDBAD600CDBD56 /* ResultViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF3B0F2BCDBAD600CDBD56 /* ResultViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +119,6 @@
 		9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISize.swift; sourceTree = "<group>"; };
 		9DEF3A952BC5EEAC005FEC47 /* GenreViewViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewViewModelProtocol.swift; sourceTree = "<group>"; };
-		9DFF3B0F2BCDBAD600CDBD56 /* ResultViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +183,6 @@
 		9D49AA752B50691700FFA152 /* ResultView */ = {
 			isa = PBXGroup;
 			children = (
-				9DFF3B0E2BCDBABA00CDBD56 /* ResultViewViewModel */,
 				9D49AA732B50690800FFA152 /* ResultView.swift */,
 				9D49AA762B506C8400FFA152 /* MovieView.swift */,
 			);
@@ -419,14 +416,6 @@
 			path = StartScreen;
 			sourceTree = "<group>";
 		};
-		9DFF3B0E2BCDBABA00CDBD56 /* ResultViewViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				9DFF3B0F2BCDBAD600CDBD56 /* ResultViewViewModel.swift */,
-			);
-			path = ResultViewViewModel;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,7 +551,6 @@
 				9D83075F2B2799AD00C6B377 /* AllGenres.swift in Sources */,
 				9D49AA7D2B5075AA00FFA152 /* LoadingOverlay.swift in Sources */,
 				9D8307572B275CD900C6B377 /* GenresScreen.swift in Sources */,
-				9DFF3B102BCDBAD600CDBD56 /* ResultViewViewModel.swift in Sources */,
 				9D1BC71E2B18CD6C006B8BCF /* ButtonStyleExtension.swift in Sources */,
 				9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */,
 				9D49AA742B50690800FFA152 /* ResultView.swift in Sources */,

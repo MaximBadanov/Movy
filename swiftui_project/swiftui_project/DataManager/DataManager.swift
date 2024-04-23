@@ -3,9 +3,12 @@ import SwiftUI
 
 
 class DataManager: DataManagerProtocol {
-    var network: NetworkServiceProtocol
+   private var network: NetworkServiceProtocol
     
-    init(network: NetworkServiceProtocol) {
+    init() {
+        guard let network = DIContainer.shared.injectDependency(dependency: NetworkService()) else {
+            fatalError("Service not found in DI container")
+        }
         self.network = network
     }
     

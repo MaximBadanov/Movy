@@ -3,9 +3,6 @@ import SwiftUI
 struct GenresScreen: View {
     @ObservedObject private var viewModel = GenreViewViewModel()
     
-//    тут пока хардкод, потому что я пока еще не додумал, как в этом массив будут добавляться жанры по нажатию кнопки жанра
-    @State private var genres: [String] = ["27", "12", "878"]
-    
     var body: some View {
         
         VStack(alignment: .leading, spacing: UISize.size8) {
@@ -17,8 +14,12 @@ struct GenresScreen: View {
                     weight: .bold
                 )
             GenresViewWithScroll()
-//            это имитация выбора жанра фильма, пока тут, знаю, что так нельзя
-                .onAppear {
+            Spacer(minLength: UISize.size8)
+            HStack(spacing: UISize.size8) {
+                Spacer(minLength: UISize.size8)
+                    .padding(.horizontal, UISize.size24)
+//                от сюда
+                Button(action: {
                     viewModel.fetchMoviesByGenre(
                         requestModel: RequestModel(
                             urlString: Urls.movieByGenres.rawValue,
@@ -26,18 +27,18 @@ struct GenresScreen: View {
                             httpMethod: HTTPMethods.get,
                             modelToParse: MovieResponse.self
                         ),
-                        genreIDs: genres
+                        genreIDs: GenreButtonViewModel.shared.genres
                     )
+                }) {
+                    Text("Get Movie")
                 }
-            Spacer(minLength: UISize.size8)
-            HStack(spacing: UISize.size8) {
-                Spacer(minLength: UISize.size8)
-                    .padding(.horizontal, UISize.size24)
+                .buttonStyle(.primaryStyle)
                 NavigationLink("Continue",
                                destination: ResultView(
                                 title: viewModel.movie?.title ?? "no title",
                                 poster: viewModel.movie?.poster ?? "no poster"
                                ))
+//                вот до сюда потом сделаю одной кнопкой
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)
             }

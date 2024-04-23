@@ -2,6 +2,7 @@ import SwiftUI
 
 
 struct GenresViewWithScroll: View {
+
     var body: some View {
         ScrollView(.horizontal,
                    showsIndicators: false) {
@@ -10,7 +11,8 @@ struct GenresViewWithScroll: View {
                     GenreButton(
                         title: genre.instance.title,
                         emoji: genre.instance.emoji,
-                        backgroundColor: genre.instance.color
+                        backgroundColor: genre.instance.color,
+                        id: genre.instance.id
                     )
                 }
             }

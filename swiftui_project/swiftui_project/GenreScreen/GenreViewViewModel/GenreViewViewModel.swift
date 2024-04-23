@@ -4,16 +4,12 @@ import Foundation
 
 class GenreViewViewModel: ObservableObject {
     @Published var movie: MovieResponseModel?
+    
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
-    private var resultViewModel = ResultViewViewModel()
     
     init() {
-        guard let network = DIContainer.shared.injectDependency(dependency: NetworkService()) else {
-            fatalError("Service not found in DI container")
-        }
-        
-        dataManager = DataManager(network: network)
+        dataManager = DataManager()
     }
 }
 
@@ -32,7 +28,7 @@ extension GenreViewViewModel: GenreViewViewModelProtocol {
                 guard let movie = data.results.randomElement() else { return }
                 print("Movie: \(movie.title ), Poster: \(movie.poster )")
                 self.movie = MovieResponseModel(title: movie.title , poster: movie.poster )
-                self.resultViewModel.movie = movie
+
             }
             )
     }

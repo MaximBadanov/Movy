@@ -5,4 +5,5 @@ struct Genre {
     let title: String
     let emoji: String
     let color: Color
+    let id: String
 }
