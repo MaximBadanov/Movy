@@ -11,7 +11,8 @@ struct GenresViewWithScroll: View {
                 ForEach(genres) { genre in
                     GenreButton(title: genre.name,
                                 emoji: genre.name.toEmoji,
-                                backgroundColor: genre.name.setColor)
+                                backgroundColor: genre.name.setColor,
+                                id: genre.id.description)
                 }
             }
         }

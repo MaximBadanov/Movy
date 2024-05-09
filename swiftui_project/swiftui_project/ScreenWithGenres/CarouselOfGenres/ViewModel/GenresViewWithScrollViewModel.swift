@@ -23,7 +23,7 @@ extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
-                    print("Finished")
+                    print("Genres successfully loaded")
                 case .failure(let error):
                     print("Finished with error: \(error)")
                 }
