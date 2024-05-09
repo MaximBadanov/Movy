@@ -13,7 +13,7 @@ class GenresViewWithScrollViewModel: ObservableObject {
 }
 
 extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
-    func fetchGenres()  {
+    func fetchGenres(completion: @escaping ([GenreResponseModel]) -> Void)  {
         let requestModel: RequestModel<GenresResponse> = RequestModel(
             urlString: Urls.moviedbGenres.rawValue,
             header: Headers.movieDB.header,
@@ -29,12 +29,7 @@ extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
                 }
             }, receiveValue: { data in
                 self.fetchedGenres = data.genres
+                completion(self.fetchedGenres)
             })
     }
-    
-    func insertGenres(completion: @escaping ([GenreResponseModel]) -> Void) {
-        self.fetchGenres()
-        DispatchQueue.main.async {
-            completion(self.fetchedGenres)
-        }
-    }}
+}

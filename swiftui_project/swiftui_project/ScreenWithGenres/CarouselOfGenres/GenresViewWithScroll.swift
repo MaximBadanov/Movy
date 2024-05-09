@@ -16,7 +16,7 @@ struct GenresViewWithScroll: View {
             }
         }
         .onAppear {
-            viewModel.insertGenres { genres in
+            viewModel.fetchGenres { genres in
                 self.genres = genres
             }
         }

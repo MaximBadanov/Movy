@@ -218,7 +218,6 @@
 		9D68A7832B08FCA4005F546A /* Supports&Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9DC557712BED1BED00DCA140 /* StringExtension */,
 				9D25A35E2B712F0D00564031 /* GenresModel */,
 				9DC557782BED32BB00DCA140 /* Genre */,
 				9D49AA842B5D626600FFA152 /* Movie */,
@@ -228,6 +227,7 @@
 				9D83506C2B9618350093D082 /* Icons */,
 				9D8350702B9618AE0093D082 /* CustomImage */,
 				9D83506E2B9618870093D082 /* Logo */,
+				9DC557712BED1BED00DCA140 /* StringExtension */,
 				9D83506F2B9618990093D082 /* Colors */,
 				9D83506D2B96185E0093D082 /* UISize */,
 			);
