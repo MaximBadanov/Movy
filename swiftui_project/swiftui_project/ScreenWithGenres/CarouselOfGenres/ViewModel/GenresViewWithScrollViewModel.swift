@@ -33,10 +33,8 @@ extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
     }
     
     func insertGenres(completion: @escaping ([GenreResponseModel]) -> Void) {
-        DispatchQueue.global().async {
-            self.fetchGenres()
-            DispatchQueue.main.async {
-                completion(self.fetchedGenres)
-            }
+        self.fetchGenres()
+        DispatchQueue.main.async {
+            completion(self.fetchedGenres)
         }
     }}
