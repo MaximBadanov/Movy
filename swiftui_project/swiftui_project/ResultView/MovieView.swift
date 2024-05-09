@@ -9,7 +9,7 @@ struct MovieView: View {
     
     var body: some View {
         VStack(spacing: UISize.size8) {
-            Text("Your movie for todaaay")
+            Text("Your movie for today")
                 .textStyle(
                     size: UISize.size24,
                     weight: .bold
