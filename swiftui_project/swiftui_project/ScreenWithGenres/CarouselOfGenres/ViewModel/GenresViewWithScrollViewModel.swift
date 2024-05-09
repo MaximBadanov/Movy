@@ -1,21 +1,18 @@
-import SwiftUI
+import Foundation
 import Combine
 
-
-class ResultViewViewModel: ObservableObject {
+class GenresViewWithScrollViewModel: ObservableObject {
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
+    @Published var fetchedGenres: [GenreResponseModel] = []
     
     init() {
-        guard let network = DIContainer.shared.injectDependency(
-            dependency: NetworkService()) else {
-            fatalError("Service not found in DI container")
-        }
-        dataManager = DataManager(network: network)
+        dataManager = DataManager()
+
     }
 }
 
-extension ResultViewViewModel: ResultViewViewModelProtocol {
+extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
     func fetchGenres()  {
         let requestModel: RequestModel<GenresResponse> = RequestModel(
             urlString: Urls.moviedbGenres.rawValue,
@@ -31,9 +28,15 @@ extension ResultViewViewModel: ResultViewViewModelProtocol {
                     print("Finished with error: \(error)")
                 }
             }, receiveValue: { data in
-                data.genres.forEach {
-                    print("Genre: \($0.name), ID: \($0.id)")
-                }
+                self.fetchedGenres = data.genres
             })
     }
-}
+    
+    func insertGenres(completion: @escaping ([GenreResponseModel]) -> Void) {
+        DispatchQueue.global().async {
+            self.fetchGenres()
+            DispatchQueue.main.async {
+                completion(self.fetchedGenres)
+            }
+        }
+    }}
