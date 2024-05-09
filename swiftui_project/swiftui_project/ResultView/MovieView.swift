@@ -39,7 +39,7 @@ struct MovieView: View {
                     weight: .heavy
                 )
                 .padding(.horizontal, UISize.size16)
-            Text(GenreButtonViewModel.shared.genres[0])
+            Text(GenreButtonViewModel.shared.genres.joined(separator: " "))
                 .textStyle(
                     size: UISize.size24,
                     weight: .medium
