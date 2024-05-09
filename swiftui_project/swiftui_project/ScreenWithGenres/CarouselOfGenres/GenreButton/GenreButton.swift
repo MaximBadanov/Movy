@@ -4,14 +4,16 @@ import SwiftUI
 struct GenreButton: View {
     @State private var isSelected: Bool = false
     @State private var id: String
-    @ObservedObject var viewModel = GenreButtonViewModel()
+    private var viewModel = GenreButtonViewModel()
 
-    
     let title: String
     let emoji: String
     let backgroundColor: Color
     
-    init(title: String, emoji: String, backgroundColor: Color, id: String) {
+    init(title: String,
+         emoji: String,
+         backgroundColor: Color,
+         id: String) {
         self.title = title
         self.emoji = emoji
         self.backgroundColor = backgroundColor
@@ -22,14 +24,7 @@ struct GenreButton: View {
         VStack(spacing: UISize.size8) {
             Button(emoji) {
                 isSelected.toggle()
-                
-                if isSelected {
-                    viewModel.addGenre(id)
-                    print(viewModel.genres)
-                } else {
-                    viewModel.removeGenre(id)
-                    print(viewModel.genres)
-                }
+                viewModel.isSelectedToogle(isSelected: isSelected, id: id)
             }
             .textStyle(
                 size: UISize.size24,
@@ -48,5 +43,4 @@ struct GenreButton: View {
         }
     }
 }
-
 

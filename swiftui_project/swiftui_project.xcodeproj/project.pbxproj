@@ -48,6 +48,7 @@
 		9DC5577A2BED32D000DCA140 /* GenreButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC557792BED32D000DCA140 /* GenreButtonExtension.swift */; };
 		9DC5577C2BED32D300DCA140 /* GenreButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5577B2BED32D300DCA140 /* GenreButtonStyle.swift */; };
 		9DC5577F2BED3F5D00DCA140 /* GenreButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5577E2BED3F5D00DCA140 /* GenreButtonViewModel.swift */; };
+		9DC557812BED4CBD00DCA140 /* GenreButtonViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC557802BED4CBD00DCA140 /* GenreButtonViewModelProtocol.swift */; };
 		9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */; };
 		9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		9DC557792BED32D000DCA140 /* GenreButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreButtonExtension.swift; sourceTree = "<group>"; };
 		9DC5577B2BED32D300DCA140 /* GenreButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonStyle.swift; sourceTree = "<group>"; };
 		9DC5577E2BED3F5D00DCA140 /* GenreButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonViewModel.swift; sourceTree = "<group>"; };
+		9DC557802BED4CBD00DCA140 /* GenreButtonViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonViewModelProtocol.swift; sourceTree = "<group>"; };
 		9DCBCD3B2B03DCF200BE8C37 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		9DCBCD3D2B03DEA700BE8C37 /* UISize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -433,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				9DC5577E2BED3F5D00DCA140 /* GenreButtonViewModel.swift */,
+				9DC557802BED4CBD00DCA140 /* GenreButtonViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				9D89F8612B13A70800FE23BE /* TextStyleModifier.swift in Sources */,
 				9D517B102B68016300477AB2 /* HTTPMethods.swift in Sources */,
 				9D2B90AA2BA1EE5C007F576F /* DIContainer.swift in Sources */,
+				9DC557812BED4CBD00DCA140 /* GenreButtonViewModelProtocol.swift in Sources */,
 				9D1BC71C2B18CBA3006B8BCF /* PrimaryButtonStyle.swift in Sources */,
 				9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */,
 				9D6859252B45A59C00A7C2CD /* GenreButton.swift in Sources */,
