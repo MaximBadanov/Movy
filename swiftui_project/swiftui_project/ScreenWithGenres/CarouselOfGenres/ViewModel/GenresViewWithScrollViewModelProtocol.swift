@@ -1,3 +1,5 @@
 protocol GenresViewWithScrollViewModelProtocol {
-    func fetchGenres(completion: @escaping ([GenreResponseModel]) -> Void) 
+    func fetchGenres()
+    func isSelected(_ id: String) -> Bool
+    func toggleSelection(_ id: String)
 }

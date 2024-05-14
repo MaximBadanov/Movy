@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct GenresScreen: View {
     var body: some View {
         VStack(alignment: .leading,
