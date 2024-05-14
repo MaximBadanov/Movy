@@ -6,7 +6,7 @@ struct GenresViewWithScroll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: UISize.size8) {
-                ForEach(viewModel.AllGenres) { genre in
+                ForEach(viewModel.allGenres) { genre in
                     GenreButton(
                         title: genre.name,
                         emoji: genre.name.toEmoji,

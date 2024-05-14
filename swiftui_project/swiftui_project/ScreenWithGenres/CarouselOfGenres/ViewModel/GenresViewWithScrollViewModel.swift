@@ -6,14 +6,21 @@ class GenresViewWithScrollViewModel: ObservableObject {
     private let dataManager: DataManager
     
     @Published var fetchedGenres: [GenreResponseModel] = []
-    @Published private var selectedGenres: [String] = []
+    @Published var selectedGenres: [String] = []
     
-    var AllGenres: [GenreResponseModel] {
+    
+    var allGenres: [GenreResponseModel] {
         fetchedGenres
     }
     
     init() {
         dataManager = DataManager()
+    }
+    
+    var closure: (([String]) -> Void)?
+    
+    func sendData() {
+        closure?(selectedGenres)
     }
 }
 
@@ -51,7 +58,7 @@ extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
         } else {
             selectedGenres.append(id)
         }
-        print(selectedGenres)
+        print("Коды выбранных жанров: \(selectedGenres)")
     }
 }
 
