@@ -5,6 +5,7 @@ struct GenresViewWithScroll: View {
     @State private var genres: [GenreResponseModel] = []
     private let viewModel = GenresViewWithScrollViewModel()
     
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: UISize.size8) {
