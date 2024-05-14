@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct MovieView: View {
-    let jokerMovie = Movie(
-        movieTitle: "Joker" ,
-        genre: "Thriller",
-        posterName: "joker"
-    )
+    let title: String
+    let poster: String
+    
+    private let aspectRatioPoster: Double = 2.4/3.5
+    private let opacity: Double = 0.1
     
     var body: some View {
         VStack(spacing: UISize.size8) {
@@ -14,15 +14,30 @@ struct MovieView: View {
                     size: UISize.size24,
                     weight: .bold
                 )
+                .padding(.bottom, UISize.size16)
             Spacer(minLength: UISize.size8)
-            Image(jokerMovie.posterName)
-                .cornerRadius(UISize.size16)
-            Text(jokerMovie.movieTitle)
+            AsyncImage(url: URL(string: Urls.posterURL.rawValue + poster)) { image in
+                image.resizable()
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(UISize.size16)
+                    .aspectRatio(aspectRatioPoster, contentMode: .fill)
+            } placeholder: {
+                Image(systemName: "movieclapper")
+                    .resizable()
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(UISize.size8)
+                    .aspectRatio(contentMode: .fit)
+                    .opacity(opacity)
+                    .foregroundColor(.customGray)
+            }
+            Spacer(minLength: UISize.size8)
+            Text(title)
                 .textStyle(
                     size: UISize.size40,
                     weight: .heavy
                 )
-            Text(jokerMovie.genre)
+                .padding(.horizontal, UISize.size16)
+            Text("some genres")
                 .textStyle(
                     size: UISize.size24,
                     weight: .medium
@@ -35,9 +50,10 @@ struct MovieView: View {
                     weight: .light
                 )
         }
+        .padding(.horizontal, UISize.size32)
     }
 }
 
 #Preview {
-    MovieView()
+    MovieView(title: "Movie Title", poster: "Movie Poster")
 }

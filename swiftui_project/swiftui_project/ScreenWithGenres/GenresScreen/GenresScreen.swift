@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct GenresScreen: View {
-    @ObservedObject private var viewModelMain = GenreScreenViewModel()
+    @ObservedObject private var viewModel = GenreScreenViewModel()
     
     var body: some View {
         VStack(alignment: .leading,
@@ -20,21 +20,21 @@ struct GenresScreen: View {
                     .padding(.horizontal, UISize.size24)
                 //                от сюда
                 Button(action: {
-                    viewModelMain.fetchMoviesByGenre(
+                    viewModel.fetchMoviesByGenre(
                         requestModel: RequestModel(
                             urlString: Urls.movieByGenres.rawValue,
                             header: Headers.movieDB.header,
                             httpMethod: HTTPMethods.get,
                             modelToParse: MovieResponse.self
                         ),
-                        genreIDs: viewModelMain.genresId
+                        genreIDs: viewModel.genresId
                     )
                 }) {
                     Text("Get Movie")
                 }
                 .buttonStyle(.primaryStyle)
                 NavigationLink("Continue",
-                               destination: ResultView())
+                               destination: ResultView(title: viewModel.movie?.title ?? "no title", poster: viewModel.movie?.poster ?? "no poster"))
                 //                вот до сюда потом сделаю одной кнопкой
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)

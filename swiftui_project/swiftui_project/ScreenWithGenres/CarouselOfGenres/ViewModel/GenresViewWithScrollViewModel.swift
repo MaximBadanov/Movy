@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import SwiftUI
 
 class GenresViewWithScrollViewModel: ObservableObject {
     @Published var fetchedGenres: [GenreResponseModel] = []
