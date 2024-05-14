@@ -2,12 +2,11 @@ import Foundation
 import Combine
 
 class GenresViewWithScrollViewModel: ObservableObject {
-    private var subscriber: AnyCancellable?
-    private let dataManager: DataManager
-    
     @Published var fetchedGenres: [GenreResponseModel] = []
     @Published var selectedGenres: [String] = []
     
+    private var subscriber: AnyCancellable?
+    private let dataManager: DataManager
     
     var allGenres: [GenreResponseModel] {
         fetchedGenres
@@ -16,16 +15,9 @@ class GenresViewWithScrollViewModel: ObservableObject {
     init() {
         dataManager = DataManager()
     }
-    
-    var closure: (([String]) -> Void)?
-    
-    func sendData() {
-        closure?(selectedGenres)
-    }
 }
 
 extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
-
     func fetchGenres() {
         let requestModel: RequestModel<GenresResponse> = RequestModel(
             urlString: Urls.moviedbGenres.rawValue,
