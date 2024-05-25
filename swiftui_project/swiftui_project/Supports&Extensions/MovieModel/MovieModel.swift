@@ -3,11 +3,14 @@ struct MovieResponse: Decodable {
 }
 
 struct MovieResponseModel: Decodable {
-    var title: String
+    let title: String
     let poster: String
+    let genres: [Int]
+    
     
     enum CodingKeys: String, CodingKey {
         case title
         case poster = "poster_path"
+        case genres = "genre_ids"
     }
 }

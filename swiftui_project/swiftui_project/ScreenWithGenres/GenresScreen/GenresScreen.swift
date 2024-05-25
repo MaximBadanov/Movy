@@ -21,12 +21,6 @@ struct GenresScreen: View {
                 //                от сюда
                 Button(action: {
                     viewModel.fetchMoviesByGenre(
-                        requestModel: RequestModel(
-                            urlString: Urls.movieByGenres.rawValue,
-                            header: Headers.movieDB.header,
-                            httpMethod: HTTPMethods.get,
-                            modelToParse: MovieResponse.self
-                        ),
                         genreIDs: viewModel.genresId
                     )
                 }) {
@@ -34,7 +28,12 @@ struct GenresScreen: View {
                 }
                 .buttonStyle(.primaryStyle)
                 NavigationLink("Continue",
-                               destination: ResultView(title: viewModel.movie?.title ?? "no title", poster: viewModel.movie?.poster ?? "no poster"))
+                               destination: ResultView(
+                                title: viewModel.movie?.title ?? "no title",
+                                poster: viewModel.movie?.poster ?? "no poster",
+                                genres: viewModel.convertIdsInString(genres:viewModel.movie?.genres ?? [0])
+                               )
+                )
                 //                вот до сюда потом сделаю одной кнопкой
                 .buttonStyle(.primaryStyle)
                 .padding(.trailing, UISize.size24)

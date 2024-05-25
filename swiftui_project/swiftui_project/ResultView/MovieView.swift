@@ -3,8 +3,9 @@ import SwiftUI
 struct MovieView: View {
     let title: String
     let poster: String
+    let genres: String
     
-    private let aspectRatioPoster: Double = 2.4/3.5
+    private let aspectRatioPoster: Double = 2.4/3.2
     private let opacity: Double = 0.1
     
     var body: some View {
@@ -20,7 +21,7 @@ struct MovieView: View {
                 image.resizable()
                     .frame(maxWidth: .infinity)
                     .cornerRadius(UISize.size16)
-                    .aspectRatio(aspectRatioPoster, contentMode: .fill)
+                    .aspectRatio(aspectRatioPoster, contentMode: .fit)
             } placeholder: {
                 Image(systemName: "movieclapper")
                     .resizable()
@@ -37,7 +38,7 @@ struct MovieView: View {
                     weight: .heavy
                 )
                 .padding(.horizontal, UISize.size16)
-            Text("some genres")
+            Text(genres)
                 .textStyle(
                     size: UISize.size24,
                     weight: .medium
@@ -51,9 +52,10 @@ struct MovieView: View {
                 )
         }
         .padding(.horizontal, UISize.size32)
+
     }
 }
 
 #Preview {
-    MovieView(title: "Movie Title", poster: "Movie Poster")
+    MovieView(title: "Movie Title", poster: "Movie Poster", genres: "Genres")
 }

@@ -202,6 +202,7 @@
 		9D49AA752B50691700FFA152 /* ResultView */ = {
 			isa = PBXGroup;
 			children = (
+				9D74E5B92C024F1A001D1A4B /* ViewModel */,
 				9D49AA732B50690800FFA152 /* ResultView.swift */,
 				9D49AA762B506C8400FFA152 /* MovieView.swift */,
 			);
@@ -256,6 +257,13 @@
 				9D83506D2B96185E0093D082 /* UISize */,
 			);
 			path = "Supports&Extensions";
+			sourceTree = "<group>";
+		};
+		9D74E5B92C024F1A001D1A4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9D8307552B275C9600C6B377 /* ScreenWithGenres */ = {

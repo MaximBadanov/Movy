@@ -52,7 +52,6 @@ extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
             selectedGenres.append(id)
         }
         print("Коды выбранных жанров: \(selectedGenres)")
+        UserDefaults.standard.setValue(selectedGenres, forKey: "selectedGenres")
     }
 }
-
-
