@@ -5,7 +5,6 @@ struct MovieView: View {
     let poster: String
     let genres: String
     
-    private let aspectRatioPoster: Double = 2.4/3.2
     private let opacity: Double = 0.1
     
     var body: some View {
@@ -20,8 +19,8 @@ struct MovieView: View {
             AsyncImage(url: URL(string: Urls.posterURL.rawValue + poster)) { image in
                 image.resizable()
                     .frame(maxWidth: .infinity)
+                    .aspectRatio(contentMode: .fit)
                     .cornerRadius(UISize.size16)
-                    .aspectRatio(aspectRatioPoster, contentMode: .fit)
             } placeholder: {
                 Image(systemName: "movieclapper")
                     .resizable()

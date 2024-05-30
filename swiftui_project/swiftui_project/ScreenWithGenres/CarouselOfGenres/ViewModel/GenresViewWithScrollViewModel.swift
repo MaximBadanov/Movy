@@ -1,24 +1,19 @@
-import Foundation
-import Combine
 import SwiftUI
+import Combine
 
-class GenresViewWithScrollViewModel: ObservableObject {
+class GenresWithScrollViewModel: ObservableObject {
     @Published var fetchedGenres: [GenreResponseModel] = []
     @Published var selectedGenres: [String] = []
-    
+
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
-    
-    var allGenres: [GenreResponseModel] {
-        fetchedGenres
-    }
-    
+
     init() {
         dataManager = DataManager()
     }
 }
 
-extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
+extension GenresWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
     func fetchGenres() {
         let requestModel: RequestModel<GenresResponse> = RequestModel(
             urlString: Urls.moviedbGenres.rawValue,
@@ -52,6 +47,5 @@ extension GenresViewWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
             selectedGenres.append(id)
         }
         print("Коды выбранных жанров: \(selectedGenres)")
-        UserDefaults.standard.setValue(selectedGenres, forKey: "selectedGenres")
     }
 }

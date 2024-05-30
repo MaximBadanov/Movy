@@ -1,45 +1,54 @@
 import SwiftUI
 
 struct GenresScreen: View {
-    @ObservedObject private var viewModel = GenreScreenViewModel()
+    @StateObject private var genreScreenViewModel = GenreScreenViewModel()
+    @StateObject private var genresWithScrollViewModel = GenresWithScrollViewModel()
+    @State private var navigateToResult = false
     
     var body: some View {
-        VStack(alignment: .leading,
-               spacing: UISize.size8) {
-            Spacer(minLength: UISize.size8)
-            Text("Choose Genres")
-                .padding(.leading, UISize.size24)
-                .textStyle(
-                    size: UISize.size32,
-                    weight: .bold
-                )
-            GenresViewWithScroll()
-            Spacer(minLength: UISize.size8)
-            HStack(spacing: UISize.size8) {
+        NavigationStack {
+            VStack(alignment: .leading, spacing: UISize.size8) {
                 Spacer(minLength: UISize.size8)
-                    .padding(.horizontal, UISize.size24)
-                //                от сюда
-                Button(action: {
-                    viewModel.fetchMoviesByGenre(
-                        genreIDs: viewModel.genresId
+                Text("Choose Genres")
+                    .padding(.leading, UISize.size24)
+                    .textStyle(size: UISize.size32, weight: .bold)
+                GenresViewWithScroll(viewModel: genresWithScrollViewModel,
+                                     selectedGenres: $genreScreenViewModel.genresId)
+                Spacer(minLength: UISize.size8)
+                HStack(spacing: UISize.size8) {
+                    Spacer(minLength: UISize.size8)
+                        .padding(.horizontal, UISize.size24)
+                    Button(action: {
+                        genreScreenViewModel.fetchMoviesByGenre()
+                        navigateToResult = true
+                    }) {
+                        Text("Get Movie")
+                    }
+                    .buttonStyle(.primaryStyle)
+                    .padding(.trailing, UISize.size24)
+                    .background(
+                        NavigationLink(
+                            destination: ResultView(
+                                title: genreScreenViewModel.movie?.title ?? "no title",
+                                poster: genreScreenViewModel.movie?.poster ?? "no poster",
+                                genres: genreScreenViewModel.stringOfGenres
+                            ),
+                            isActive: $navigateToResult
+                        ) { }
                     )
-                }) {
-                    Text("Get Movie")
+                    //                    почему-то  не работает корректно
+                    //                    .navigationDestination(
+                    //                        isPresented: $navigateToResult,
+                    //                        destination: { ResultView(
+                    //                            title: genreScreenViewModel.movie?.title ?? "no title",
+                    //                            poster: genreScreenViewModel.movie?.poster ?? "no poster",
+                    //                            genres: genreScreenViewModel.stringOfGenres
+                    //                        )}
+                    //                    )
                 }
-                .buttonStyle(.primaryStyle)
-                NavigationLink("Continue",
-                               destination: ResultView(
-                                title: viewModel.movie?.title ?? "no title",
-                                poster: viewModel.movie?.poster ?? "no poster",
-                                genres: viewModel.convertIdsInString(genres:viewModel.movie?.genres ?? [0])
-                               )
-                )
-                //                вот до сюда потом сделаю одной кнопкой
-                .buttonStyle(.primaryStyle)
-                .padding(.trailing, UISize.size24)
             }
+            .padding(.bottom, UISize.size16)
         }
-               .padding(.bottom, UISize.size16)
     }
 }
 

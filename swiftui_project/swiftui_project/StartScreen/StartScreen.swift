@@ -2,8 +2,9 @@ import SwiftUI
 
 
 struct StartScreen: View {
+    @State private var goNextScreen = false
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: UISize.size8) {
                 HStack(alignment: .firstTextBaseline,
                        spacing: UISize.size8) {
@@ -25,10 +26,15 @@ struct StartScreen: View {
                 Spacer(minLength: UISize.size8)
                 LogoView()
                 Spacer(minLength: UISize.size8)
-                NavigationLink("Continue",
-                               destination: GenresScreen())
+                Button("Continue", action: {
+                    goNextScreen.toggle()
+                })
                 .buttonStyle(.primaryStyle)
                 .padding(.horizontal, UISize.size40)
+                .navigationDestination(
+                    isPresented: $goNextScreen,
+                    destination: { GenresScreen() }
+                )
             }
             .padding(.bottom, UISize.size16)
         }
