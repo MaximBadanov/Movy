@@ -1,3 +1,3 @@
 protocol GenreScreenViewModelProtocol {
-    func fetchMoviesByGenre()
+    func fetchMoviesByGenre(completion: @escaping (Bool) -> Void)
 }

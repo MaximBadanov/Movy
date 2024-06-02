@@ -18,33 +18,24 @@ struct GenresScreen: View {
                 HStack(spacing: UISize.size8) {
                     Spacer(minLength: UISize.size8)
                         .padding(.horizontal, UISize.size24)
-                    Button(action: {
-                        genreScreenViewModel.fetchMoviesByGenre()
-                        navigateToResult = true
-                    }) {
-                        Text("Get Movie")
-                    }
+                    Button("Get Movie",
+                           action: {
+                        genreScreenViewModel.fetchMoviesByGenre() { success in
+                            if success {
+                                navigateToResult.toggle()
+                            }
+                        }
+                    })
                     .buttonStyle(.primaryStyle)
                     .padding(.trailing, UISize.size24)
-                    .background(
-                        NavigationLink(
-                            destination: ResultView(
-                                title: genreScreenViewModel.movie?.title ?? "no title",
-                                poster: genreScreenViewModel.movie?.poster ?? "no poster",
-                                genres: genreScreenViewModel.stringOfGenres
-                            ),
-                            isActive: $navigateToResult
-                        ) { }
+                    .navigationDestination(
+                        isPresented: $navigateToResult,
+                        destination: { ResultView(
+                            title: genreScreenViewModel.movie?.title ?? "no title",
+                            poster: genreScreenViewModel.movie?.poster ?? "no poster",
+                            genres: genreScreenViewModel.stringOfGenres)
+                        }
                     )
-                    //                    почему-то  не работает корректно
-                    //                    .navigationDestination(
-                    //                        isPresented: $navigateToResult,
-                    //                        destination: { ResultView(
-                    //                            title: genreScreenViewModel.movie?.title ?? "no title",
-                    //                            poster: genreScreenViewModel.movie?.poster ?? "no poster",
-                    //                            genres: genreScreenViewModel.stringOfGenres
-                    //                        )}
-                    //                    )
                 }
             }
             .padding(.bottom, UISize.size16)

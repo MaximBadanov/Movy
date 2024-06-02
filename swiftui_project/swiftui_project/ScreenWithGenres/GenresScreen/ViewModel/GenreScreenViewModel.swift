@@ -20,7 +20,7 @@ class GenreScreenViewModel: ObservableObject {
 }
 
 extension GenreScreenViewModel: GenreScreenViewModelProtocol {
-    func fetchMoviesByGenre() {
+    func fetchMoviesByGenre(completion: @escaping (Bool) -> Void) {
         let requestModel = RequestModel(
             urlString: Urls.movieByGenres.rawValue,
             header: Headers.movieDB.header,
@@ -50,6 +50,7 @@ extension GenreScreenViewModel: GenreScreenViewModelProtocol {
                                                 poster: movie.poster,
                                                 genres: movie.genres)
                 self.stringOfGenres = self.convertIdsInString(genres: movie.genres)
+                completion(true)
             })
     }
 }
