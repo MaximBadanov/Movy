@@ -6,6 +6,7 @@ class GenreScreenViewModel: ObservableObject {
     @Published private(set) var movie: MovieResponseModel?
     @Published var genresId: [String] = []
     @Published var stringOfGenres: String = ""
+    
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
 

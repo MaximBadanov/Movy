@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct GenresScreen: View {
-    @StateObject private var genreScreenViewModel = GenreScreenViewModel()
-    @StateObject private var genresWithScrollViewModel = GenresWithScrollViewModel()
+    @ObservedObject private var genreScreenViewModel = GenreScreenViewModel()
+    @ObservedObject private var genresWithScrollViewModel = GenresWithScrollViewModel()
     @State private var navigateToResult = false
     
     var body: some View {

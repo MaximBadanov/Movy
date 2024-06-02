@@ -16,7 +16,9 @@ struct MovieView: View {
                 )
                 .padding(.bottom, UISize.size16)
             Spacer(minLength: UISize.size8)
-            AsyncImage(url: URL(string: Urls.posterURL.rawValue + poster)) { image in
+            AsyncImage(url: URL(
+                string: Urls.posterURL.rawValue + poster)
+            ) { image in
                 image.resizable()
                     .frame(maxWidth: .infinity)
                     .aspectRatio(contentMode: .fit)
