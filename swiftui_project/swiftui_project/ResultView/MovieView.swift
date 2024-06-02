@@ -33,7 +33,7 @@ struct MovieView: View {
             Spacer(minLength: UISize.size8)
             Text(title)
                 .textStyle(
-                    size: UISize.size40,
+                    size: UISize.size32,
                     weight: .heavy
                 )
                 .padding(.horizontal, UISize.size16)
