@@ -48,44 +48,28 @@ extension String {
     
     var setColor: Color {
         switch self.lowercased() {
-        case "action":
+        case "action", "history", "tv movie":
             return .red
-        case "adventure":
-            return .blue
-        case "animation":
-            return .orange
-        case "comedy":
-            return .cyan
-        case "crime":
+        case "crime", "mystery", "thriller":
             return .gray
+        case "documentary", "romance":
+            return .indigo
+        case "adventure", "drama":
+            return .blue
+        case "music", "western":
+            return .yellow
+        case "comedy", "war":
+            return .cyan
         case "fantasy":
             return .purple
         case "science fiction":
             return .green
         case "horror":
             return .teal
-        case "documentary":
-            return .indigo
-        case "drama":
-            return .blue
         case "family":
             return .pink
-        case "history":
-            return .red
-        case "music":
-            return .yellow
-        case "mystery":
-            return .gray
-        case "romance":
-            return .indigo
-        case "tv movie":
-            return .red
-        case "thriller":
-            return .gray
-        case "war":
-            return .cyan
-        case "western":
-            return .yellow
+        case "animation":
+            return .orange
         default:
             return .customGray
         }

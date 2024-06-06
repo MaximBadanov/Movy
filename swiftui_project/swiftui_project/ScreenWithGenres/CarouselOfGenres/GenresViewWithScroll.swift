@@ -1,11 +1,8 @@
 import SwiftUI
 
-import SwiftUI
-
 struct GenresViewWithScroll: View {
     @ObservedObject var viewModel: GenresWithScrollViewModel
-    @Binding var selectedGenres: [String]
-
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: UISize.size8) {
@@ -17,7 +14,6 @@ struct GenresViewWithScroll: View {
                         isSelected: viewModel.isSelected(genre.id.description),
                         toggleSelection: {
                             viewModel.toggleSelection(genre.id.description)
-                            selectedGenres = viewModel.selectedGenres
                         }
                     )
                 }

@@ -3,6 +3,7 @@ import SwiftUI
 
 struct StartScreen: View {
     @State private var goNextScreen = false
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: UISize.size8) {

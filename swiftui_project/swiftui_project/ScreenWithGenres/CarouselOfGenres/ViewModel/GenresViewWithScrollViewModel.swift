@@ -1,13 +1,13 @@
-import SwiftUI
 import Combine
+import SwiftUI
 
 class GenresWithScrollViewModel: ObservableObject {
     @Published var fetchedGenres: [GenreResponseModel] = []
     @Published var selectedGenres: [String] = []
-
+    
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
-
+    
     init() {
         dataManager = DataManager()
     }
@@ -22,6 +22,7 @@ extension GenresWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
             modelToParse: GenresResponse.self
         )
         subscriber = dataManager.fetchGenres(requestModel: requestModel)
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
@@ -30,22 +31,20 @@ extension GenresWithScrollViewModel: GenresViewWithScrollViewModelProtocol {
                     print("Finished with error: \(error)")
                 }
             }, receiveValue: { data in
-                DispatchQueue.main.async {
-                    self.fetchedGenres = data.genres
-                }
+                self.fetchedGenres = data.genres
             })
     }
-
+    
     func isSelected(_ id: String) -> Bool {
         selectedGenres.contains(id)
     }
-
+    
     func toggleSelection(_ id: String) {
         if isSelected(id) {
             selectedGenres.removeAll(where: { $0 == id })
         } else {
             selectedGenres.append(id)
         }
-        print("Коды выбранных жанров: \(selectedGenres)")
+        print("Selected genres IDs: \(selectedGenres)")
     }
 }
