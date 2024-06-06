@@ -6,6 +6,7 @@ struct MovieView: View {
     let genres: String
     
     private let opacity: Double = 0.1
+    private let lineLimit: Int = 3
     
     var body: some View {
         VStack(spacing: UISize.size8) {
@@ -35,13 +36,14 @@ struct MovieView: View {
             Spacer(minLength: UISize.size8)
             Text(title)
                 .textStyle(
-                    size: UISize.size32,
+                    size: UISize.size24,
                     weight: .heavy
                 )
+                .lineLimit(lineLimit)
                 .padding(.horizontal, UISize.size16)
             Text(genres)
                 .textStyle(
-                    size: UISize.size24,
+                    size: UISize.size16,
                     weight: .medium
                 )
                 .foregroundColor(.customGray)
