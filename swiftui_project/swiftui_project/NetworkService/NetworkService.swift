@@ -20,8 +20,8 @@ class NetworkService: NetworkServiceProtocol {
     func makeRequest<T: Decodable>(requestModel: RequestModel<T>, genreIDs: [String]) -> AnyPublisher<T,Error> {
         let urlString = requestModel.urlString
         let parameters: [String: Any] = [
-            "with_genres": genreIDs.joined(separator: ","),
-            "page": "\(Int.random(in: 1...10))"
+            "with_genres": genreIDs.randomElement() ?? "",
+            "page": "\(Int.random(in: 1...100))"
         ]
         guard var urlComponents = URLComponents(string: urlString) else {
             print("Bad URL")

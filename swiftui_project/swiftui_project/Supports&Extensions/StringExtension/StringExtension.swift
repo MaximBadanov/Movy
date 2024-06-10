@@ -90,7 +90,7 @@ extension String {
         case "14":
             return "fantasy"
         case "878":
-            return "science fiction"
+            return "scifi"
         case "27":
             return "horror"
         case "99":
