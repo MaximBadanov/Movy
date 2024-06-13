@@ -24,9 +24,9 @@ struct StartScreen: View {
                 }
                        .textStyle(size: UISize.size24,
                                   weight: .regular)
-                Spacer(minLength: UISize.size8)
+                Spacer()
                 LogoView()
-                Spacer(minLength: UISize.size8)
+                Spacer()
                 Button("Continue", action: {
                     goNextScreen.toggle()
                 })

@@ -7,14 +7,14 @@ struct GenresScreen: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: UISize.size8) {
-                Spacer(minLength: UISize.size8)
+                Spacer()
                 Text("Choose Genres")
                     .padding(.leading, UISize.size24)
                     .textStyle(size: UISize.size32, weight: .bold)
                 GenresViewWithScroll(viewModel: genresWithScrollViewModel)
-                Spacer(minLength: UISize.size8)
+                Spacer()
                 HStack(spacing: UISize.size8) {
-                    Spacer(minLength: UISize.size8)
+                    Spacer()
                         .padding(.horizontal, UISize.size24)
                     Button("Get Movie",
                            action: {

@@ -16,7 +16,7 @@ struct MovieView: View {
                     weight: .bold
                 )
                 .padding(.bottom, UISize.size16)
-            Spacer(minLength: UISize.size8)
+            Spacer()
             AsyncImage(url: URL(
                 string: Urls.posterURL.rawValue + poster)
             ) { image in
@@ -33,10 +33,10 @@ struct MovieView: View {
                     .opacity(opacity)
                     .foregroundColor(.customGray)
             }
-            Spacer(minLength: UISize.size8)
+            Spacer()
             Text(title)
                 .textStyle(
-                    size: UISize.size24,
+                    size: UISize.size32,
                     weight: .heavy
                 )
                 .lineLimit(lineLimit)
@@ -47,7 +47,7 @@ struct MovieView: View {
                     weight: .medium
                 )
                 .foregroundColor(.customGray)
-            Spacer(minLength: UISize.size8)
+            Spacer()
             Text("This movie is showed for you just once")
                 .textStyle(
                     size: UISize.size16,
