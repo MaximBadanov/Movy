@@ -16,7 +16,12 @@ class DataManager: DataManagerProtocol {
         return network.makeRequest(requestModel: requestModel)
     }
     
+<<<<<<< HEAD
     func fetchMovieByGenres<T: Decodable>(requestModel: RequestModel<T>, genreIDs: [String]) -> AnyPublisher<T, Error> {
+=======
+    func fetchMovieByGenres<T: Decodable>(requestModel: RequestModel<T>,
+                                          genreIDs: [String]) -> AnyPublisher<T, Error> {
+>>>>>>> task_k_work
         return network.makeRequest(requestModel: requestModel, genreIDs: genreIDs)
     }
 }

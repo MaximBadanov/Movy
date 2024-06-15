@@ -1,7 +1,7 @@
 import SwiftUI
 
-
 struct GenreButton: View {
+<<<<<<< HEAD:swiftui_project/swiftui_project/GenreScreen/GenreButton.swift
     @State private var isSelected: Bool = false
     @State private var id: String
     
@@ -30,11 +30,25 @@ struct GenreButton: View {
                     GenreButtonViewModel.shared.genres.removeAll(where: { $0 == id })
                     print(GenreButtonViewModel.shared.genres)
                 }
+=======
+    let title: String
+    let emoji: String
+    let backgroundColor: Color
+    let isSelected: Bool
+    let toggleSelection: () -> Void
+
+    var body: some View {
+        VStack(spacing: UISize.size8) {
+            Button(action: {
+                toggleSelection()
+            }) {
+                Text(emoji)
+                    .textStyle(
+                        size: UISize.size24,
+                        weight: .regular
+                    )
+>>>>>>> task_k_work:swiftui_project/swiftui_project/ScreenWithGenres/CarouselOfGenres/GenreButton/GenreButton.swift
             }
-            .textStyle(
-                size: UISize.size24,
-                weight: .regular
-            )
             .genreButtonStyle(
                 backgroundColor: backgroundColor,
                 isSelected: isSelected

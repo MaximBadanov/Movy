@@ -1,0 +1,3 @@
+protocol GenreScreenViewModelProtocol {
+    func fetchMoviesByGenre()
+}

@@ -8,4 +8,5 @@ struct UISize {
     static var size32: CGFloat = 32
     static var size40: CGFloat = 40
     static var size64: CGFloat = 64
+    static var size184: CGFloat = 184
 }
