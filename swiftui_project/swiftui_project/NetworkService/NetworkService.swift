@@ -10,7 +10,7 @@ class NetworkService: NetworkServiceProtocol {
                 .eraseToAnyPublisher()
         }
         if let parameters = requestModel.parameters {
-            urlComponents.queryItems = parameters.parameter.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
+            urlComponents.queryItems = parameters.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
         }
         guard let url = urlComponents.url else {
             print("Failed to create URL")
