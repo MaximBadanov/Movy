@@ -22,13 +22,13 @@ class GenreScreenViewModel: ObservableObject {
 
 extension GenreScreenViewModel: GenreScreenViewModelProtocol {
     func fetchMoviesByGenre() {
-        let movieParams = MovieParameters(randomGenreID: self.genresId.randomElement() ?? "")
-        let requestParams = RequestParameters(parameter: movieParams)
+        let requestParams = MovieParameters(randomGenreID: self.genresId.randomElement() ?? "")
+            .convertToDictionary()
         let requestModel = RequestModelUniversal<MovieResponse>(
             urlString: Urls.movieByGenres.rawValue,
             httpMethod: HTTPMethods.get,
             header: Headers.movieDB.header,
-            parameters: requestParams.convertToDictionary()
+            parameters: requestParams
         )
         subscriber = dataManager.fetchData(requestModel: requestModel)
             .receive(on: DispatchQueue.main)
