@@ -1,5 +1,3 @@
-import SwiftUI
-
 struct Movie {
     let movieTitle: String
     let genre: String
