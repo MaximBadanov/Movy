@@ -1,7 +1,7 @@
 import SwiftUI
 
 
-struct LoadingOverlay: View {
+struct LoadingView: View {
     private let scaleSize: CGFloat = 2
     
     var body: some View {
@@ -18,7 +18,7 @@ struct LoadingOverlay: View {
 }
 
 #Preview {
-    LoadingOverlay()
+    LoadingView()
 }
 
 
