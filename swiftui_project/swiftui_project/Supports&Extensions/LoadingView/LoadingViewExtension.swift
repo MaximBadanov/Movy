@@ -6,7 +6,6 @@ extension View {
         switch isLoading.wrappedValue {
         case true:
             LoadingView()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         withAnimation {
