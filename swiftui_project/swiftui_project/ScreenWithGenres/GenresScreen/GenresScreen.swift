@@ -18,7 +18,7 @@ struct GenresScreen: View {
                         .padding(.horizontal, UISize.size24)
                     Button("Get Movie",
                            action: {
-                        genreScreenViewModel.fetchMoviesByGenre()
+                            genreScreenViewModel.fetchMoviesByGenre()
                     })
                     .buttonStyle(.primaryStyle)
                     .padding(.trailing, UISize.size24)
@@ -34,6 +34,7 @@ struct GenresScreen: View {
             }
             .padding(.bottom, UISize.size16)
         }
+        .isLoading(isLoading: genreScreenViewModel.isLoading)
         .onAppear {
             genresWithScrollViewModel.$selectedGenres
                 .assign(to: &genreScreenViewModel.$genresId)

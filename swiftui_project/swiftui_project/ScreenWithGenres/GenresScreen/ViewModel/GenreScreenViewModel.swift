@@ -6,6 +6,7 @@ class GenreScreenViewModel: ObservableObject {
     @Published var genresId: [String] = []
     @Published var stringOfGenres: String = ""
     @Published var navigateToResult = false
+    @Published var isLoading = false
     
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
@@ -22,6 +23,7 @@ class GenreScreenViewModel: ObservableObject {
 
 extension GenreScreenViewModel: GenreScreenViewModelProtocol {
     func fetchMoviesByGenre() {
+        self.isLoading = true
         let requestParams = MovieParameters(randomGenreID: self.genresId.randomElement() ?? "")
             .convertToDictionary()
         let requestModel = RequestModelUniversal<MovieResponse>(
@@ -38,6 +40,8 @@ extension GenreScreenViewModel: GenreScreenViewModelProtocol {
                     print("Finished")
                 case .failure(let error):
                     print("Finished with error: \(error)")
+                    self.navigateToResult = true
+                    self.isLoading = false
                 }
             }, receiveValue: { data in
                 guard let movie = data.results.randomElement() else { return }
@@ -51,7 +55,8 @@ extension GenreScreenViewModel: GenreScreenViewModelProtocol {
                                                 poster: movie.poster,
                                                 genres: movie.genres)
                 self.stringOfGenres = self.convertIdsInString(genres: movie.genres)
-                self.navigateToResult.toggle()
+                self.navigateToResult = true
+                self.isLoading = false
             })
     }
 }

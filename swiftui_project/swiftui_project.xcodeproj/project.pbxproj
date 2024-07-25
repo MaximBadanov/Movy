@@ -44,6 +44,7 @@
 		9D97D8602AFA52BF003F10B5 /* swiftui_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D85F2AFA52BF003F10B5 /* swiftui_projectTests.swift */; };
 		9D97D86A2AFA52BF003F10B5 /* swiftui_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */; };
 		9D97D86C2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */; };
+		9D9DC3492C52C80E00F9D1C7 /* NoPosterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DC3482C52C80E00F9D1C7 /* NoPosterScreen.swift */; };
 		9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB350D52AFE529600283DE9 /* StartScreen.swift */; };
 		9DC557702BED061100DCA140 /* GenresViewWithScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5576F2BED061100DCA140 /* GenresViewWithScrollViewModel.swift */; };
 		9DC557732BED1C1800DCA140 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC557722BED1C1800DCA140 /* StringExtension.swift */; };
@@ -113,6 +114,7 @@
 		9D97D8652AFA52BF003F10B5 /* swiftui_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITests.swift; sourceTree = "<group>"; };
 		9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D9DC3482C52C80E00F9D1C7 /* NoPosterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPosterScreen.swift; sourceTree = "<group>"; };
 		9DB350D52AFE529600283DE9 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		9DB350DD2AFEB02700283DE9 /* swiftui-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "swiftui-project-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9DC5576F2BED061100DCA140 /* GenresViewWithScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewWithScrollViewModel.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				9D3DCB052BF3CAE6007F5E96 /* MovieModel */,
 				9D1BC7852B1E5374006B8BCF /* Text */,
 				9DC557712BED1BED00DCA140 /* StringExtension */,
+				9D9DC3472C52C7D200F9D1C7 /* Subviews */,
 				9D83506D2B96185E0093D082 /* UISize */,
 			);
 			path = "Supports&Extensions";
@@ -398,6 +401,14 @@
 				9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */,
 			);
 			path = swiftui_projectUITests;
+			sourceTree = "<group>";
+		};
+		9D9DC3472C52C7D200F9D1C7 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				9D9DC3482C52C80E00F9D1C7 /* NoPosterScreen.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		9DB350D72AFE52B600283DE9 /* StartScreen */ = {
@@ -616,6 +627,7 @@
 				9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */,
 				9D3DCB042BF3CA3B007F5E96 /* GenreScreenViewModel.swift in Sources */,
 				9D6859252B45A59C00A7C2CD /* GenreButton.swift in Sources */,
+				9D9DC3492C52C80E00F9D1C7 /* NoPosterScreen.swift in Sources */,
 				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
 				9DC5577C2BED32D300DCA140 /* GenreButtonStyle.swift in Sources */,
 				9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */,
