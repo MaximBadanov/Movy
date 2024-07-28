@@ -1,12 +1,12 @@
 import SwiftUI
 
 
-struct LoadingOverlay: View {
+struct LoadingView: View {
     private let scaleSize: CGFloat = 2
     
     var body: some View {
         Spacer(minLength: UISize.size8)
-        ProgressView("Please wait")
+        ProgressView()
             .textStyle(
                 size: UISize.size8,
                 weight: .light
@@ -18,7 +18,7 @@ struct LoadingOverlay: View {
 }
 
 #Preview {
-    LoadingOverlay()
+    LoadingView()
 }
 
 

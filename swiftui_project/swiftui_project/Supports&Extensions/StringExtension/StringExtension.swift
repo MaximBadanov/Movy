@@ -108,7 +108,7 @@ extension String {
         case "10749":
             return "romance"
         case "10770":
-            return "tv movie"
+            return "series"
         case "53":
             return "thriller"
         case "10752":
