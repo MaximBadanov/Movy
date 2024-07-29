@@ -35,6 +35,7 @@
 		9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */; };
 		9D8350762B9623BA0093D082 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8350752B9623BA0093D082 /* DataManager.swift */; };
 		9D89F8612B13A70800FE23BE /* TextStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89F8602B13A70800FE23BE /* TextStyleModifier.swift */; };
+		9D92E1752C580E2900001FE4 /* EmptyScrollwWithGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D92E1742C580E2900001FE4 /* EmptyScrollwWithGenres.swift */; };
 		9D95B7E82B62C72D00CF660F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95B7E72B62C72D00CF660F /* NetworkService.swift */; };
 		9D95B7EA2B62C78700CF660F /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95B7E92B62C78700CF660F /* NetworkServiceProtocol.swift */; };
 		9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */; };
@@ -102,6 +103,7 @@
 		9D83075A2B27754D00C6B377 /* GenresViewWithScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewWithScroll.swift; sourceTree = "<group>"; };
 		9D8350752B9623BA0093D082 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9D89F8602B13A70800FE23BE /* TextStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleModifier.swift; sourceTree = "<group>"; };
+		9D92E1742C580E2900001FE4 /* EmptyScrollwWithGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyScrollwWithGenres.swift; sourceTree = "<group>"; };
 		9D95B7E72B62C72D00CF660F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9D95B7E92B62C78700CF660F /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		9D97D8462AFA52BE003F10B5 /* swiftui_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -407,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				9D9DC3482C52C80E00F9D1C7 /* NoPosterScreen.swift */,
+				9D92E1742C580E2900001FE4 /* EmptyScrollwWithGenres.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				9D49AA7D2B5075AA00FFA152 /* LoadingView.swift in Sources */,
 				9D8307572B275CD900C6B377 /* GenresScreen.swift in Sources */,
 				9D1BC71E2B18CD6C006B8BCF /* ButtonStyleExtension.swift in Sources */,
+				9D92E1752C580E2900001FE4 /* EmptyScrollwWithGenres.swift in Sources */,
 				9DCBCD3C2B03DCF200BE8C37 /* LogoView.swift in Sources */,
 				9D3DCB072BF3CAF5007F5E96 /* MovieModel.swift in Sources */,
 				9D49AA742B50690800FFA152 /* ResultView.swift in Sources */,
