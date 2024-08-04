@@ -6,21 +6,18 @@ struct GenresViewWithScroll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: UISize.size8) {
-                if viewModel.fetchedGenres.isEmpty {
-                    EmptyScrollwWithGenres()
-                } else {
-                    ForEach(viewModel.fetchedGenres) { genre in
-                        GenreButton(
-                            title: genre.name,
-                            emoji: genre.name.toEmoji,
-                            backgroundColor: genre.name.setColor,
-                            isSelected: viewModel.isSelected(genre.id.description),
-                            toggleSelection: {
-                                viewModel.toggleSelection(genre.id.description)
-                            }
-                        )
-                    }
+                ForEach(viewModel.fetchedGenres) { genre in
+                    GenreButton(
+                        title: genre.name,
+                        emoji: genre.name.toEmoji,
+                        backgroundColor: genre.name.setColor,
+                        isSelected: viewModel.isSelected(genre.id.description),
+                        toggleSelection: {
+                            viewModel.toggleSelection(genre.id.description)
+                        }
+                    )
                 }
+                .isLoading(isLoading: viewModel.isLoading, type: .emptyGenresView)
             }
         }
         .onAppear {
