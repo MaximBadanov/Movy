@@ -3,7 +3,7 @@ import SwiftUI
 struct GenresScreen: View {
     @ObservedObject private var genreScreenViewModel = GenreScreenViewModel()
     @ObservedObject private var genresWithScrollViewModel = GenresWithScrollViewModel()
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: UISize.size8) {
             Spacer()
@@ -25,7 +25,7 @@ struct GenresScreen: View {
                     isPresented: $genreScreenViewModel.navigateToResult,
                     destination: { ResultView(
                         title: genreScreenViewModel.movie?.title ?? "no title",
-                        poster: genreScreenViewModel.movie?.poster ?? "no poster",
+                        posterImage: genreScreenViewModel.poster,
                         genres: genreScreenViewModel.stringOfGenres)
                     }
                 )
