@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0CE5932C86001C0058FC73 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CE5922C86001C0058FC73 /* CacheService.swift */; };
+		9D0CE5952C8606900058FC73 /* CacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CE5942C8606900058FC73 /* CacheServiceProtocol.swift */; };
 		9D119E7E2B963983007DEDA1 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D119E7D2B963983007DEDA1 /* DataManagerProtocol.swift */; };
 		9D1BC7182B18C93C006B8BCF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7172B18C93C006B8BCF /* AppLogo.swift */; };
 		9D1BC71A2B18C9A5006B8BCF /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1BC7192B18C9A5006B8BCF /* Icons.swift */; };
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D0CE5922C86001C0058FC73 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		9D0CE5942C8606900058FC73 /* CacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceProtocol.swift; sourceTree = "<group>"; };
 		9D119E7D2B963983007DEDA1 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
 		9D1BC7172B18C93C006B8BCF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		9D1BC7192B18C9A5006B8BCF /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
@@ -156,6 +160,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0CE5912C85FFFE0058FC73 /* CasheService */ = {
+			isa = PBXGroup;
+			children = (
+				9D0CE5922C86001C0058FC73 /* CacheService.swift */,
+				9D0CE5942C8606900058FC73 /* CacheServiceProtocol.swift */,
+			);
+			path = CasheService;
+			sourceTree = "<group>";
+		};
 		9D1BC7842B1E534E006B8BCF /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +385,7 @@
 				9D8307552B275C9600C6B377 /* ScreenWithGenres */,
 				9D49AA752B50691700FFA152 /* ResultView */,
 				9D95B7E62B62C70C00CF660F /* NetworkService */,
+				9D0CE5912C85FFFE0058FC73 /* CasheService */,
 				9D2B90A82BA1EE24007F576F /* DependencyInjectionContainer */,
 				9D8350742B9623A10093D082 /* DataManager */,
 				9D68A7832B08FCA4005F546A /* Supports&Extensions */,
@@ -643,7 +657,9 @@
 				9D3DCB092BF3CB82007F5E96 /* GenreScreenViewModelProtocol.swift in Sources */,
 				9D6560ED2C5FE31B00A5911B /* WhileLoading.swift in Sources */,
 				9D517B162B680B4B00477AB2 /* Urls.swift in Sources */,
+				9D0CE5932C86001C0058FC73 /* CacheService.swift in Sources */,
 				9D49AA7F2B55854700FFA152 /* LoadingViewExtension.swift in Sources */,
+				9D0CE5952C8606900058FC73 /* CacheServiceProtocol.swift in Sources */,
 				9D1BC7182B18C93C006B8BCF /* AppLogo.swift in Sources */,
 				9D119E7E2B963983007DEDA1 /* DataManagerProtocol.swift in Sources */,
 				9D6BF22A2C31EDA6004E76CB /* ExtensionEncodable.swift in Sources */,

@@ -7,12 +7,15 @@ class GenreScreenViewModel: ObservableObject {
     @Published var stringOfGenres: String = ""
     @Published var navigateToResult = false
     @Published var isLoading = false
+    @Published var poster: UIImage?
     
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
+    private let cacheServive: CacheService<UIImage>
     
     init() {
         dataManager = DataManager()
+        cacheServive = CacheService<UIImage>()
     }
     
     private func convertIdsInString(genres: [Int]) -> String {
@@ -60,3 +63,4 @@ extension GenreScreenViewModel: GenreScreenViewModelProtocol {
             })
     }
 }
+
