@@ -25,7 +25,7 @@ struct GenresScreen: View {
                     isPresented: $genreScreenViewModel.navigateToResult,
                     destination: { ResultView(
                         title: genreScreenViewModel.movie?.title ?? "no title",
-                        posterImage: genreScreenViewModel.poster,
+                        poster: genreScreenViewModel.movie?.poster ?? "no poster",
                         genres: genreScreenViewModel.stringOfGenres)
                     }
                 )
