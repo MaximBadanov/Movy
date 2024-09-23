@@ -37,6 +37,8 @@ struct GenresScreen: View {
         .onAppear {
             genresWithScrollViewModel.$selectedGenres
                 .assign(to: &genreScreenViewModel.$genresId)
+            genreScreenViewModel.movie = nil
+            genreScreenViewModel.stringOfGenres = ""
         }
     }
 }

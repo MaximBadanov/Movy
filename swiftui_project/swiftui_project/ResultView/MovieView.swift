@@ -15,7 +15,7 @@ struct MovieView: View {
                     weight: .bold
                 )
             Spacer()
-            MovyAsyncImage(url: Urls.posterURL.rawValue + poster)
+            CachedImage(url: Urls.posterURL.rawValue + poster)
             Text(title)
                 .lineLimit(lineLimit)
                 .textStyle(

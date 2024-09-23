@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 
 class GenreScreenViewModel: ObservableObject {
-    @Published private(set) var movie: MovieResponseModel?
+    @Published var movie: MovieResponseModel?
     @Published var genresId: [String] = []
     @Published var stringOfGenres: String = ""
     @Published var navigateToResult = false
@@ -10,11 +10,9 @@ class GenreScreenViewModel: ObservableObject {
 
     private var subscriber: AnyCancellable?
     private let dataManager: DataManager
-    private let cacheServive: CacheService<UIImage>
 
     init() {
         dataManager = DataManager()
-        cacheServive = CacheService<UIImage>()
     }
 
     private func convertIdsInString(genres: [Int]) -> String {
