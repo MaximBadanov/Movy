@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "F4558702-C6A9-4E44-86D8-A9AD1697FE12",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Movy.xcodeproj",
+      "identifier" : "9D97D8452AFA52BE003F10B5",
+      "name" : "Movy"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Movy.xcodeproj",
+        "identifier" : "9D97D85A2AFA52BF003F10B5",
+        "name" : "MovyTests"
+      }
+    }
+  ],
+  "version" : 1
+}
