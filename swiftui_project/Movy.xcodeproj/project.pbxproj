@@ -42,7 +42,7 @@
 		9D92E1752C580E2900001FE4 /* EmptyScrollwWithGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D92E1742C580E2900001FE4 /* EmptyScrollwWithGenres.swift */; };
 		9D95B7E82B62C72D00CF660F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95B7E72B62C72D00CF660F /* NetworkService.swift */; };
 		9D95B7EA2B62C78700CF660F /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95B7E92B62C78700CF660F /* NetworkServiceProtocol.swift */; };
-		9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */; };
+		9D97D84A2AFA52BE003F10B5 /* MovyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* MovyApp.swift */; };
 		9D97D84E2AFA52BF003F10B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */; };
 		9D97D8512AFA52BF003F10B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97D8502AFA52BF003F10B5 /* Preview Assets.xcassets */; };
 		9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8542AFA52BF003F10B5 /* swiftui_project.xcdatamodeld */; };
@@ -115,18 +115,18 @@
 		9D92E1742C580E2900001FE4 /* EmptyScrollwWithGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyScrollwWithGenres.swift; sourceTree = "<group>"; };
 		9D95B7E72B62C72D00CF660F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9D95B7E92B62C78700CF660F /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
-		9D97D8462AFA52BE003F10B5 /* swiftui_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectApp.swift; sourceTree = "<group>"; };
+		9D97D8462AFA52BE003F10B5 /* Movy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97D8492AFA52BE003F10B5 /* MovyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovyApp.swift; sourceTree = "<group>"; };
 		9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D97D8502AFA52BF003F10B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D97D8552AFA52BF003F10B5 /* swiftui_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftui_project.xcdatamodel; sourceTree = "<group>"; };
-		9D97D85B2AFA52BF003F10B5 /* swiftui_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97D85B2AFA52BF003F10B5 /* MovyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97D85F2AFA52BF003F10B5 /* swiftui_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectTests.swift; sourceTree = "<group>"; };
-		9D97D8652AFA52BF003F10B5 /* swiftui_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97D8652AFA52BF003F10B5 /* MovyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITests.swift; sourceTree = "<group>"; };
 		9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9DB350D52AFE529600283DE9 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		9DB350DD2AFEB02700283DE9 /* swiftui-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "swiftui-project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9DB350DD2AFEB02700283DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		9DB6B5B82CA1909B00907A6A /* CachedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageViewModel.swift; sourceTree = "<group>"; };
 		9DB6B5BB2CA19F9C00907A6A /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
 		9DC5576F2BED061100DCA140 /* GenresViewWithScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewWithScrollViewModel.swift; sourceTree = "<group>"; };
@@ -373,8 +373,8 @@
 		9D97D83D2AFA52BE003F10B5 = {
 			isa = PBXGroup;
 			children = (
-				9DB350DD2AFEB02700283DE9 /* swiftui-project-Info.plist */,
-				9D97D8482AFA52BE003F10B5 /* swiftui_project */,
+				9DB350DD2AFEB02700283DE9 /* Info.plist */,
+				9D97D8482AFA52BE003F10B5 /* Movy */,
 				9D97D85E2AFA52BF003F10B5 /* swiftui_projectTests */,
 				9D97D8682AFA52BF003F10B5 /* swiftui_projectUITests */,
 				9D97D8472AFA52BE003F10B5 /* Products */,
@@ -384,17 +384,17 @@
 		9D97D8472AFA52BE003F10B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D97D8462AFA52BE003F10B5 /* swiftui_project.app */,
-				9D97D85B2AFA52BF003F10B5 /* swiftui_projectTests.xctest */,
-				9D97D8652AFA52BF003F10B5 /* swiftui_projectUITests.xctest */,
+				9D97D8462AFA52BE003F10B5 /* Movy.app */,
+				9D97D85B2AFA52BF003F10B5 /* MovyTests.xctest */,
+				9D97D8652AFA52BF003F10B5 /* MovyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D97D8482AFA52BE003F10B5 /* swiftui_project */ = {
+		9D97D8482AFA52BE003F10B5 /* Movy */ = {
 			isa = PBXGroup;
 			children = (
-				9D97D8492AFA52BE003F10B5 /* swiftui_projectApp.swift */,
+				9D97D8492AFA52BE003F10B5 /* MovyApp.swift */,
 				9DB350D72AFE52B600283DE9 /* StartScreen */,
 				9D8307552B275C9600C6B377 /* ScreenWithGenres */,
 				9D49AA752B50691700FFA152 /* ResultView */,
@@ -408,7 +408,7 @@
 				9D97D8542AFA52BF003F10B5 /* swiftui_project.xcdatamodeld */,
 				9D97D84F2AFA52BF003F10B5 /* Preview Content */,
 			);
-			path = swiftui_project;
+			path = Movy;
 			sourceTree = "<group>";
 		};
 		9D97D84F2AFA52BF003F10B5 /* Preview Content */ = {
@@ -518,9 +518,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D97D8452AFA52BE003F10B5 /* swiftui_project */ = {
+		9D97D8452AFA52BE003F10B5 /* Movy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D97D86F2AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "swiftui_project" */;
+			buildConfigurationList = 9D97D86F2AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "Movy" */;
 			buildPhases = (
 				9D97D8422AFA52BE003F10B5 /* Sources */,
 				9D97D8432AFA52BE003F10B5 /* Frameworks */,
@@ -530,14 +530,14 @@
 			);
 			dependencies = (
 			);
-			name = swiftui_project;
+			name = Movy;
 			productName = swiftui_project;
-			productReference = 9D97D8462AFA52BE003F10B5 /* swiftui_project.app */;
+			productReference = 9D97D8462AFA52BE003F10B5 /* Movy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D97D85A2AFA52BF003F10B5 /* swiftui_projectTests */ = {
+		9D97D85A2AFA52BF003F10B5 /* MovyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D97D8722AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "swiftui_projectTests" */;
+			buildConfigurationList = 9D97D8722AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "MovyTests" */;
 			buildPhases = (
 				9D97D8572AFA52BF003F10B5 /* Sources */,
 				9D97D8582AFA52BF003F10B5 /* Frameworks */,
@@ -548,14 +548,14 @@
 			dependencies = (
 				9D97D85D2AFA52BF003F10B5 /* PBXTargetDependency */,
 			);
-			name = swiftui_projectTests;
+			name = MovyTests;
 			productName = swiftui_projectTests;
-			productReference = 9D97D85B2AFA52BF003F10B5 /* swiftui_projectTests.xctest */;
+			productReference = 9D97D85B2AFA52BF003F10B5 /* MovyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D97D8642AFA52BF003F10B5 /* swiftui_projectUITests */ = {
+		9D97D8642AFA52BF003F10B5 /* MovyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D97D8752AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "swiftui_projectUITests" */;
+			buildConfigurationList = 9D97D8752AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "MovyUITests" */;
 			buildPhases = (
 				9D97D8612AFA52BF003F10B5 /* Sources */,
 				9D97D8622AFA52BF003F10B5 /* Frameworks */,
@@ -566,9 +566,9 @@
 			dependencies = (
 				9D97D8672AFA52BF003F10B5 /* PBXTargetDependency */,
 			);
-			name = swiftui_projectUITests;
+			name = MovyUITests;
 			productName = swiftui_projectUITests;
-			productReference = 9D97D8652AFA52BF003F10B5 /* swiftui_projectUITests.xctest */;
+			productReference = 9D97D8652AFA52BF003F10B5 /* MovyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -594,7 +594,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D97D8412AFA52BE003F10B5 /* Build configuration list for PBXProject "swiftui_project" */;
+			buildConfigurationList = 9D97D8412AFA52BE003F10B5 /* Build configuration list for PBXProject "Movy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -607,9 +607,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D97D8452AFA52BE003F10B5 /* swiftui_project */,
-				9D97D85A2AFA52BF003F10B5 /* swiftui_projectTests */,
-				9D97D8642AFA52BF003F10B5 /* swiftui_projectUITests */,
+				9D97D8452AFA52BE003F10B5 /* Movy */,
+				9D97D85A2AFA52BF003F10B5 /* MovyTests */,
+				9D97D8642AFA52BF003F10B5 /* MovyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -670,7 +670,7 @@
 				9D83075B2B27754D00C6B377 /* GenresViewWithScroll.swift in Sources */,
 				9D3DCB042BF3CA3B007F5E96 /* GenreScreenViewModel.swift in Sources */,
 				9D6859252B45A59C00A7C2CD /* GenreButton.swift in Sources */,
-				9D97D84A2AFA52BE003F10B5 /* swiftui_projectApp.swift in Sources */,
+				9D97D84A2AFA52BE003F10B5 /* MovyApp.swift in Sources */,
 				9DC5577C2BED32D300DCA140 /* GenreButtonStyle.swift in Sources */,
 				9DCBCD3E2B03DEA700BE8C37 /* UISize.swift in Sources */,
 				9D1BC7202B18CDC7006B8BCF /* ViewTextExtension.swift in Sources */,
@@ -718,12 +718,12 @@
 /* Begin PBXTargetDependency section */
 		9D97D85D2AFA52BF003F10B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D97D8452AFA52BE003F10B5 /* swiftui_project */;
+			target = 9D97D8452AFA52BE003F10B5 /* Movy */;
 			targetProxy = 9D97D85C2AFA52BF003F10B5 /* PBXContainerItemProxy */;
 		};
 		9D97D8672AFA52BF003F10B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D97D8452AFA52BE003F10B5 /* swiftui_project */;
+			target = 9D97D8452AFA52BE003F10B5 /* Movy */;
 			targetProxy = 9D97D8662AFA52BF003F10B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -855,11 +855,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui_project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Movy/Preview Content\"";
 				DEVELOPMENT_TEAM = C3777FY22U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "swiftui-project-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -870,7 +870,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "maxim-badanov.swiftui-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "maxim-badanov.Movy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -885,11 +885,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui_project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Movy/Preview Content\"";
 				DEVELOPMENT_TEAM = C3777FY22U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "swiftui-project-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -900,7 +900,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "maxim-badanov.swiftui-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "maxim-badanov.Movy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -923,7 +923,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui_project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui_project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movy";
 			};
 			name = Debug;
 		};
@@ -942,7 +942,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui_project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui_project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movy";
 			};
 			name = Release;
 		};
@@ -983,7 +983,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D97D8412AFA52BE003F10B5 /* Build configuration list for PBXProject "swiftui_project" */ = {
+		9D97D8412AFA52BE003F10B5 /* Build configuration list for PBXProject "Movy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D97D86D2AFA52BF003F10B5 /* Debug */,
@@ -992,7 +992,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D97D86F2AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "swiftui_project" */ = {
+		9D97D86F2AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "Movy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D97D8702AFA52BF003F10B5 /* Debug */,
@@ -1001,7 +1001,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D97D8722AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "swiftui_projectTests" */ = {
+		9D97D8722AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "MovyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D97D8732AFA52BF003F10B5 /* Debug */,
@@ -1010,7 +1010,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D97D8752AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "swiftui_projectUITests" */ = {
+		9D97D8752AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "MovyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D97D8762AFA52BF003F10B5 /* Debug */,

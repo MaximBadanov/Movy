@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D97D8452AFA52BE003F10B5"
-               BuildableName = "swiftui_project.app"
-               BlueprintName = "swiftui_project"
-               ReferencedContainer = "container:swiftui_project.xcodeproj">
+               BuildableName = "Movy.app"
+               BlueprintName = "Movy"
+               ReferencedContainer = "container:Movy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D97D85A2AFA52BF003F10B5"
-               BuildableName = "swiftui_projectTests.xctest"
-               BlueprintName = "swiftui_projectTests"
-               ReferencedContainer = "container:swiftui_project.xcodeproj">
+               BuildableName = "MovyTests.xctest"
+               BlueprintName = "MovyTests"
+               ReferencedContainer = "container:Movy.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D97D8642AFA52BF003F10B5"
-               BuildableName = "swiftui_projectUITests.xctest"
-               BlueprintName = "swiftui_projectUITests"
-               ReferencedContainer = "container:swiftui_project.xcodeproj">
+               BuildableName = "MovyUITests.xctest"
+               BlueprintName = "MovyUITests"
+               ReferencedContainer = "container:Movy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D97D8452AFA52BE003F10B5"
-            BuildableName = "swiftui_project.app"
-            BlueprintName = "swiftui_project"
-            ReferencedContainer = "container:swiftui_project.xcodeproj">
+            BuildableName = "Movy.app"
+            BlueprintName = "Movy"
+            ReferencedContainer = "container:Movy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D97D8452AFA52BE003F10B5"
-            BuildableName = "swiftui_project.app"
-            BlueprintName = "swiftui_project"
-            ReferencedContainer = "container:swiftui_project.xcodeproj">
+            BuildableName = "Movy.app"
+            BlueprintName = "Movy"
+            ReferencedContainer = "container:Movy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

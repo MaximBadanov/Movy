@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct swiftui_projectApp: App {
+struct MovyApp: App {
     var body: some Scene {
         WindowGroup {
             StartScreen()
