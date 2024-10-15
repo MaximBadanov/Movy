@@ -31,6 +31,7 @@
 		9D517B142B68064000477AB2 /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D517B132B68064000477AB2 /* Headers.swift */; };
 		9D517B162B680B4B00477AB2 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D517B152B680B4B00477AB2 /* Urls.swift */; };
 		9D5C93BF2C99E94D00B575D5 /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C93BE2C99E94D00B575D5 /* CachedImage.swift */; };
+		9D63D19A2CBEB33F00FA8FC8 /* MovyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D1992CBEB33F00FA8FC8 /* MovyTests.swift */; };
 		9D6560ED2C5FE31B00A5911B /* WhileLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6560EC2C5FE31B00A5911B /* WhileLoading.swift */; };
 		9D6859252B45A59C00A7C2CD /* GenreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6859242B45A59C00A7C2CD /* GenreButton.swift */; };
 		9D68A7822B08FA7D005F546A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A7812B08FA7D005F546A /* ColorExtension.swift */; };
@@ -45,10 +46,7 @@
 		9D97D84A2AFA52BE003F10B5 /* MovyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8492AFA52BE003F10B5 /* MovyApp.swift */; };
 		9D97D84E2AFA52BF003F10B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */; };
 		9D97D8512AFA52BF003F10B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97D8502AFA52BF003F10B5 /* Preview Assets.xcassets */; };
-		9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8542AFA52BF003F10B5 /* swiftui_project.xcdatamodeld */; };
-		9D97D8602AFA52BF003F10B5 /* swiftui_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D85F2AFA52BF003F10B5 /* swiftui_projectTests.swift */; };
-		9D97D86A2AFA52BF003F10B5 /* swiftui_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */; };
-		9D97D86C2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */; };
+		9D97D8562AFA52BF003F10B5 /* Movy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D97D8542AFA52BF003F10B5 /* Movy.xcdatamodeld */; };
 		9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB350D52AFE529600283DE9 /* StartScreen.swift */; };
 		9DB6B5B92CA190AA00907A6A /* CachedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6B5B82CA1909B00907A6A /* CachedImageViewModel.swift */; };
 		9DB6B5BC2CA19FA900907A6A /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6B5BB2CA19F9C00907A6A /* PlaceholderImage.swift */; };
@@ -64,13 +62,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		9D97D85C2AFA52BF003F10B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D97D83E2AFA52BE003F10B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D97D8452AFA52BE003F10B5;
-			remoteInfo = swiftui_project;
-		};
-		9D97D8662AFA52BF003F10B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D97D83E2AFA52BE003F10B5 /* Project object */;
 			proxyType = 1;
@@ -104,6 +95,7 @@
 		9D517B132B68064000477AB2 /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 		9D517B152B680B4B00477AB2 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		9D5C93BE2C99E94D00B575D5 /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
+		9D63D1992CBEB33F00FA8FC8 /* MovyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovyTests.swift; sourceTree = "<group>"; };
 		9D6560EC2C5FE31B00A5911B /* WhileLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhileLoading.swift; sourceTree = "<group>"; };
 		9D6859242B45A59C00A7C2CD /* GenreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButton.swift; sourceTree = "<group>"; };
 		9D68A7812B08FA7D005F546A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -119,12 +111,8 @@
 		9D97D8492AFA52BE003F10B5 /* MovyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovyApp.swift; sourceTree = "<group>"; };
 		9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D97D8502AFA52BF003F10B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9D97D8552AFA52BF003F10B5 /* swiftui_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftui_project.xcdatamodel; sourceTree = "<group>"; };
+		9D97D8552AFA52BF003F10B5 /* Movy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movy.xcdatamodel; sourceTree = "<group>"; };
 		9D97D85B2AFA52BF003F10B5 /* MovyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D97D85F2AFA52BF003F10B5 /* swiftui_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectTests.swift; sourceTree = "<group>"; };
-		9D97D8652AFA52BF003F10B5 /* MovyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITests.swift; sourceTree = "<group>"; };
-		9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9DB350D52AFE529600283DE9 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		9DB350DD2AFEB02700283DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		9DB6B5B82CA1909B00907A6A /* CachedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageViewModel.swift; sourceTree = "<group>"; };
@@ -148,13 +136,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9D97D8582AFA52BF003F10B5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D97D8622AFA52BF003F10B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,8 +356,7 @@
 			children = (
 				9DB350DD2AFEB02700283DE9 /* Info.plist */,
 				9D97D8482AFA52BE003F10B5 /* Movy */,
-				9D97D85E2AFA52BF003F10B5 /* swiftui_projectTests */,
-				9D97D8682AFA52BF003F10B5 /* swiftui_projectUITests */,
+				9D97D85E2AFA52BF003F10B5 /* MovyTests */,
 				9D97D8472AFA52BE003F10B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -386,7 +366,6 @@
 			children = (
 				9D97D8462AFA52BE003F10B5 /* Movy.app */,
 				9D97D85B2AFA52BF003F10B5 /* MovyTests.xctest */,
-				9D97D8652AFA52BF003F10B5 /* MovyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,7 +384,7 @@
 				9D5C93BC2C99E92900B575D5 /* CachedImage */,
 				9D68A7832B08FCA4005F546A /* Supports&Extensions */,
 				9D97D84D2AFA52BF003F10B5 /* Assets.xcassets */,
-				9D97D8542AFA52BF003F10B5 /* swiftui_project.xcdatamodeld */,
+				9D97D8542AFA52BF003F10B5 /* Movy.xcdatamodeld */,
 				9D97D84F2AFA52BF003F10B5 /* Preview Content */,
 			);
 			path = Movy;
@@ -419,21 +398,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9D97D85E2AFA52BF003F10B5 /* swiftui_projectTests */ = {
+		9D97D85E2AFA52BF003F10B5 /* MovyTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D97D85F2AFA52BF003F10B5 /* swiftui_projectTests.swift */,
+				9D63D1992CBEB33F00FA8FC8 /* MovyTests.swift */,
 			);
-			path = swiftui_projectTests;
-			sourceTree = "<group>";
-		};
-		9D97D8682AFA52BF003F10B5 /* swiftui_projectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9D97D8692AFA52BF003F10B5 /* swiftui_projectUITests.swift */,
-				9D97D86B2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift */,
-			);
-			path = swiftui_projectUITests;
+			path = MovyTests;
 			sourceTree = "<group>";
 		};
 		9D9DC3472C52C7D200F9D1C7 /* LoadingViews */ = {
@@ -553,24 +523,6 @@
 			productReference = 9D97D85B2AFA52BF003F10B5 /* MovyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D97D8642AFA52BF003F10B5 /* MovyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9D97D8752AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "MovyUITests" */;
-			buildPhases = (
-				9D97D8612AFA52BF003F10B5 /* Sources */,
-				9D97D8622AFA52BF003F10B5 /* Frameworks */,
-				9D97D8632AFA52BF003F10B5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9D97D8672AFA52BF003F10B5 /* PBXTargetDependency */,
-			);
-			name = MovyUITests;
-			productName = swiftui_projectUITests;
-			productReference = 9D97D8652AFA52BF003F10B5 /* MovyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -585,10 +537,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					9D97D85A2AFA52BF003F10B5 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 9D97D8452AFA52BE003F10B5;
-					};
-					9D97D8642AFA52BF003F10B5 = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 9D97D8452AFA52BE003F10B5;
 					};
@@ -609,7 +557,6 @@
 			targets = (
 				9D97D8452AFA52BE003F10B5 /* Movy */,
 				9D97D85A2AFA52BF003F10B5 /* MovyTests */,
-				9D97D8642AFA52BF003F10B5 /* MovyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -625,13 +572,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9D97D8592AFA52BF003F10B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D97D8632AFA52BF003F10B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -660,7 +600,7 @@
 				9D49AA862B5D627F00FFA152 /* Movie.swift in Sources */,
 				9D68A7822B08FA7D005F546A /* ColorExtension.swift in Sources */,
 				9D517B142B68064000477AB2 /* Headers.swift in Sources */,
-				9D97D8562AFA52BF003F10B5 /* swiftui_project.xcdatamodeld in Sources */,
+				9D97D8562AFA52BF003F10B5 /* Movy.xcdatamodeld in Sources */,
 				9DB350D62AFE529600283DE9 /* StartScreen.swift in Sources */,
 				9DC557732BED1C1800DCA140 /* StringExtension.swift in Sources */,
 				9D89F8612B13A70800FE23BE /* TextStyleModifier.swift in Sources */,
@@ -700,16 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D97D8602AFA52BF003F10B5 /* swiftui_projectTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D97D8612AFA52BF003F10B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D97D86C2AFA52BF003F10B5 /* swiftui_projectUITestsLaunchTests.swift in Sources */,
-				9D97D86A2AFA52BF003F10B5 /* swiftui_projectUITests.swift in Sources */,
+				9D63D19A2CBEB33F00FA8FC8 /* MovyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,11 +651,6 @@
 			isa = PBXTargetDependency;
 			target = 9D97D8452AFA52BE003F10B5 /* Movy */;
 			targetProxy = 9D97D85C2AFA52BF003F10B5 /* PBXContainerItemProxy */;
-		};
-		9D97D8672AFA52BF003F10B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9D97D8452AFA52BE003F10B5 /* Movy */;
-			targetProxy = 9D97D8662AFA52BF003F10B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -946,40 +872,6 @@
 			};
 			name = Release;
 		};
-		9D97D8762AFA52BF003F10B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C3777FY22U;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "maxim-badanov.swiftui-projectUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = swiftui_project;
-			};
-			name = Debug;
-		};
-		9D97D8772AFA52BF003F10B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C3777FY22U;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "maxim-badanov.swiftui-projectUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = swiftui_project;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1010,25 +902,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D97D8752AFA52BF003F10B5 /* Build configuration list for PBXNativeTarget "MovyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D97D8762AFA52BF003F10B5 /* Debug */,
-				9D97D8772AFA52BF003F10B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9D97D8542AFA52BF003F10B5 /* swiftui_project.xcdatamodeld */ = {
+		9D97D8542AFA52BF003F10B5 /* Movy.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9D97D8552AFA52BF003F10B5 /* swiftui_project.xcdatamodel */,
+				9D97D8552AFA52BF003F10B5 /* Movy.xcdatamodel */,
 			);
-			currentVersion = 9D97D8552AFA52BF003F10B5 /* swiftui_project.xcdatamodel */;
-			path = swiftui_project.xcdatamodeld;
+			currentVersion = 9D97D8552AFA52BF003F10B5 /* Movy.xcdatamodel */;
+			path = Movy.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

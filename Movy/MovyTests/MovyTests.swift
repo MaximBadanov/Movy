@@ -1,14 +1,6 @@
-//
-//  swiftui_projectTests.swift
-//  swiftui_projectTests
-//
-//  Created by Максим Баданов on 07.11.2023.
-//
-
 import XCTest
-@testable import swiftui_project
 
-final class swiftui_projectTests: XCTestCase {
+final class MovyTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
